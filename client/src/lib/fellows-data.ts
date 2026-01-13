@@ -93,6 +93,43 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
   videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Placeholder
 }));
 
+// Manually specific updates based on Broad Forum Presentation data
+const presentationFellows: Partial<Fellow>[] = [
+  {
+    name: "Arden", // Inferred from "Arden's Math Non-Routine Thought Partner" - Mapping to closest match or assuming generic for now if not in list, but let's assume valid ID if found.
+    // Wait, no Arden in original list. Let's look for match. 
+    // "Arden" is not in the list. Maybe "A. Swenson"? Or "A. Uy"? Or "A. Katine"?
+    // "Arden's tool" -> "Arden’s Math Non-Routine Thought Partner"
+    // Let's assume one of the "A." names or a missing fellow. 
+    // Given "Arden" is explicitly named in the new context but not fully in the old list, 
+    // I will check if I can match "Arden" to any existing name or add if strictly needed.
+    // Scanning list... "A. Swenson", "A. Uy", "A. Kang", "A. Dvorak", "A. Katine". 
+    // Without confirmation, I will stick to general updates or update specific ones mentioned clearly.
+    // "Joe Vincent" -> "J. Vincente" (ID 12)
+    // "Brenden" -> "Brendan Harney" (ID 1)
+  },
+  {
+    id: "1", // Brendan Harney
+    appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review.",
+    quote: "We need tools that guide thinking, not replace it.",
+    impact: "Helps students practice sustained attention and judgment by structuring how they critique and support their peers."
+  },
+  {
+    id: "12", // J. Vincente (Joe Vincent)
+    appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
+    impact: "Reveals misconceptions that would otherwise stay hidden until the actual defense, allowing students to refine their arguments and understanding beforehand."
+  }
+];
+
+// Apply updates
+presentationFellows.forEach(update => {
+  const index = fellows.findIndex(f => f.id === update.id);
+  if (index !== -1) {
+    fellows[index] = { ...fellows[index], ...update };
+  }
+});
+
+
 export const contextData = {
   consortium: {
     title: "Consortium Schools",
@@ -106,4 +143,11 @@ export const contextData = {
     title: "Outward Bound Schools",
     description: "NYC Outward Bound Schools joins together demanding and engaging learning with an emphasis on community and character. They honor students’ roots and dreams while preparing them for success in college, careers, and citizenship. Curriculum is based on field experiences and projects that engage students critical thinking and problem solving skills. The Crew advisory model throughout high school helps to build a strong community and ongoing support for students’ social-emotional development."
   }
+};
+
+export const broadContext = {
+  title: "AI That Deepens Thinking",
+  subtitle: "A Teacher-Centered Approach to Innovation in NYC Public Schools",
+  description: "Much of the current conversation about AI in schools leans toward shortcuts. Faster grading. Quick lesson plans. A smoother workflow. None of that answers the real question facing classrooms: How do we help students practice sustained attention, make sense of complex ideas, and build their own interpretations in a world where a machine can produce a passable answer in seconds?",
+  mission: "In our district, we are trying to keep the focus on deep and meaningful thinking. AI should strengthen the parts of learning that require patience, judgment, reflection, and conversation. It should not replace them."
 };
