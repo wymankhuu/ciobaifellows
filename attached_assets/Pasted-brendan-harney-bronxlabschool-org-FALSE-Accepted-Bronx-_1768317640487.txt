@@ -1,0 +1,41 @@
+brendan.harney@bronxlabschool.org	FALSE	Accepted	Bronx Lab School
+jacob.prairie@bronxlabschool.org	FALSE	Accepted	Bronx Lab School
+christina.crisfield@bronxlabschool.org	FALSE	Accepted	Bronx Lab School
+crystal@bcs448.org	FALSE	Accepted	Brooklyn Collaborative School
+glen@bcs448.org	FALSE	Accepted	Brooklyn Collaborative School
+jlong22@schools.nyc.gov	FALSE	Accepted	CIOB District Team
+ecoppola5@schools.nyc.gov	FALSE	Accepted	CIOB District Team
+akatine@schools.nyc.gov	FALSE	Accepted	CIOB District Team
+sbruss@schools.nyc.gov	FALSE	Accepted	CIOB District Team
+ecastro16@schools.nyc.gov	FALSE	Accepted	CIOB District Team
+auy@schools.nyc.gov	FALSE	Accepted	Crotona International High School
+jvincente2@schools.nyc.gov	TRUE	Accepted	East Side Community School
+aswenso@schools.nyc.gov	TRUE	Accepted	East Side Community School
+Ccostello2@schools.nyc.gov	FALSE	Accepted	El Puente Academy for Peace and Justice
+EdB@FLHFHS.org	TRUE	Accepted	Fannie Lou Hamer Freedom High School 
+yousra@flushinginternational.org	FALSE	Accepted	Flushing High School
+eloi@flushinginternational.org	FALSE	Accepted	Flushing High School
+mbritto2@schools.nyc.gov	FALSE	Accepted	Forsyth Satellite Academy
+jrojas27@schools.nyc.gov	TRUE	Accepted	Forsyth Satellite Academy
+M.sane@ihsph.org	TRUE	Accepted	International High School @ Prospect Heights 
+sdesilv2@schools.nyc.gov	FALSE	Accepted	International High School at Union Square
+advorak@schools.nyc.gov	FALSE	Accepted	International HS at Union Square
+khalia.joseph@internationalsnetwork.org	FALSE	Accepted	Internationals Network 
+khalia.joseph@internationalsnetwork.org	TRUE	Accepted	Internationals Network 
+DWilson36@schools.nyc.gov	FALSE	Accepted	Lyons Community School
+skern@northstaracademy.org	FALSE	Accepted	North Star Academy
+mike.taubman@northstaracademy.org	FALSE	Accepted	North Star Academy
+dolan.morgan@internationalsnetwork.org	TRUE	Accepted	NYC Outward Bound
+rbonilla7@schools.nyc.gov	FALSE	Accepted	School Without Walls
+jferraiolo@schools.nyc.gov	FALSE	Accepted	School Without Walls
+akang@mihsnyc.org	FALSE	Accepted	The Manhattan International High School 
+mahn@mihsnyc.org	FALSE	Accepted	The Manhattan International High School 
+Wabreu5@schools.nyc.gov	TRUE	Accepted	University Heights High School
+nweber5@uhhsnyc.org	FALSE	Accepted	University Heights High School
+yousra@flushinginternational.org	FALSE	Accepted	Flushing High School
+Brett Xu	FALSE	Waitlist	Pan American International HS
+Tess Ramsey	FALSE	Waitlist	Speyer Legacy School
+Tania Mohammed 	FALSE	Waitlist	The Manhattan International High School 
+Rusmi Ramli	FALSE	Waitlist	University Heights High School
+Jessica Rodriguez	FALSE	Waitlist	University Heights High School
+speters9@schools.nyc.gov	TRUE	Accepted	Virtual Innovators Academy
