@@ -1,0 +1,117 @@
+Broad Forum Presentation - Friday Jan 16, 2026
+
+Title: AI That Deepens Thinking: A Teacher-Centered Approach to Innovation in NYC Public Schools 
+Timing: 75 minutes. 
+Outcomes:
+Learn about our experiences trying to support deeper learning with AI. 
+Discuss and engage with many of the trade-offs and challenges we’re engaging
+
+Description: Much of the current conversation about AI in schools leans toward shortcuts. Faster grading. Quick lesson plans. A smoother workflow. None of that answers the real question facing classrooms: How do we help students practice sustained attention, make sense of complex ideas, and build their own interpretations in a world where a machine can produce a passable answer in seconds? 
+
+In our district, we are trying to keep the focus on deep and meaningful thinking. AI should strengthen the parts of learning that require patience, judgment, reflection, and conversation. It should not replace them. 
+
+Our partnership with Playlab has given teachers room to design the tools they actually need. Eight lab schools and more than 30 fellows have created tools like a Project-Based Learning Design Co-Pilot, a Teacher Feedback Coach, and a Student Internship Explorer. Each tool started from a real dilemma. How do I see student reasoning more clearly? How do I support a multilingual student without doing the work for them? How do I design a project that requires genuine analysis instead of surface-level answers? 
+
+This session will share a few classroom stories, show short demonstrations, and introduce a simple protocol we use with fellows. The protocol asks one central question: Does this use of AI deepen thinking, or does it flatten it? We will look at times when unplugged work matters, and times when AI can open access or reveal misconceptions that would otherwise stay hidden. 
+
+Outline:
+
+15 mins - Tower of Hanoi 
+
+5 mins - debrief 
+
+5 mins - essay question
+
+10 mins - Intros & framing
+Alan C
+Yusuf
+The map of the work, partnership over the past 2 years
+
+5 mins - Revisit tower of hanoi, but with Arden’s tool
+
+10 mins - debrief + reveal 
+What was different? What did you notice
+Let’s explore how she designed this
+
+Above came from lab school/AI Innovation Fellow work
+
+20 minutes Here are 4 other tools that you can explore 
+Student facing
+Teacher planning (
+Leader / teacher coaching – Bronx Lab teacher coaching tools:
+(Al’s DOK tool, from a lab school in the district where the principal and their teachers are piloting ways to use ai to advance deeper learning. 
+JD’s student centered activity tool - helping teachers imagine new ways to teach and approach their classes
+Something else?
+
+5 mins close
+
+Introductions (short)
+Alan - district context
+Yusuf - Playlab context
+
+Map: Offer a brief map of the work. AI learning. Staff, teacher and leader aI use to support their work. Lab schools exploring how ai might shift how their school models work. 
+
+Today - we’re going to zoom in and focus on student experience – and on a core question a lot of us are wrestling with - How do we help students practice sustained attention, make sense of complex ideas, and build their own interpretations in a world where a machine can produce a passable answer in seconds?
+
+Opening Frame - Put yourself in a student’s shoes. With existing assignments and available AI tools (like Gemini, ChatGPT, etc.) what might a young person do?
+Read the guiding frame aloud (from the original description): AI talk too often focuses on shortcuts; we’re here to talk about sustained attention, complex ideas, and interpretation.
+Clarify this isn’t a product pitch. It’s a chance to think with real classroom work.
+Live demo of how a typical student might use AI
+What was the thinking intention behind this task?
+What would a passable answer look like if done by AI only?
+What would still require student judgment?
+Give groups two tasks/homework assignments and ask them to act like students to use AI to do the assignment.
+Gemini - Tower of Hanoi - Rich math problem, but AI shortcuts the thinking by telling you exactly what to do.
+Gemini - 4 Page Essay on Civil Liberties and Identity - Classic essay topic, pulled from LA Unified Standards, should be relevant but easy for AI
+State the core question again: Does this use of AI deepen thinking, or flatten it? Debrief: 
+Ask two groups to share one insight.
+Highlight where the task relied on judgment, interpretation, or perspective.
+Connect back to opening challenge about complex ideas.
+
+Zoom Out
+Why is critical thinking or higher-order thinking worth preserving in our schools? What does it mean to intentionally cultivate depth of thinking? 
+Once we’ve identified this challenge, how do we go about approaching it? Through school/district AI Use Policies? (prohibitions/blue books/on-demand) or the added questions of how teachers use AI? (saving time via efficiencies and potential to coach/support teachers in developing their thinking)
+Our Approach: Invest in the teachers and leaders to develop tools that truly deepen the thinking. That maintains the teacher's investment and knowledge of students, grounded in local knowledge and values, empowering teachers with the tools to democratize building 
+(a) ask kids to do meaningful things. Authentic work trumps assignments that aren’t meaningful
+(b) authentic work actually requires more scaffolding. AI can help - but we’ve found that generic AI isn’t enough. Students often need more guidance - which is where our fellows have explored designing AI Experiences…  
+
+Let’s go back to the Math problem - A different kind of tool 
+Brief tool evolution narrative (printed or projected)
+Arden’s Math Non-Routine Thought Partner - represents a logic tool in math that scaffolds reasoning without solving the problem completely. 
+Yusuf - 
+Why did the teacher build this?
+What cognitive work was at stake?
+What constraint was put in the tool to protect thinking? 
+Q to audience: where does this tool guide thinking, and not replace it with students
+Don’t do a feature tour. Focus on design intention and tradeoffs. 
+
+Explore/Play - Two Science Tools
+Brenden’s Near Peer Feedback
+Joe Vincent’s Science PBAT Presentation Practice
+Reveal the design context/decisions/reference documents
+Invite participants to identify one strength and one risk
+Nudge groups towards how they know something deepened the student thinking
+
+Small Group → Whole Group Discussion → Q&A
+What are the most important kinds of learning you want to create/preserve in your school? 
+What conditions (protocols, teacher moves, accountability) seemed to shift the balance toward deeper thinking? 
+Invite people to share how they’ve approached something simliar
+Exit Prompts:
+What’s one place you’ll now pause before saying yes to AI in your context
+What’s one context where AI might reveal student thinking more clearly?
+
+Close with the Bigger Picture (5 mins)
+Email to Principals
+CIOB + Playlab Partnership 25-26 (first two pages)
+AI Innovation Fellows Cohort (first two pages)
+
+
+Questions for design fellows
+
+Tell us about your project
+What problem or challenge are you addressing
+What would happen in the past / before your project?
+What does your project enable or make possible? 
+Has anything else shifted in your practice? E.g. do you work differently with students? Etc.?
+
+

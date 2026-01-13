@@ -1,0 +1,109 @@
+export interface Fellow {
+  id: string;
+  name: string;
+  email?: string;
+  school: string;
+  role: string;
+  status: "Accepted" | "Waitlist";
+  category: "Consortium" | "International" | "Outward Bound" | "District/Other";
+  bio?: string;
+  appDescription?: string;
+  impact?: string;
+  videoUrl?: string; // Placeholder for embedded video
+  quote?: string;
+}
+
+const schoolCategories: Record<string, Fellow['category']> = {
+  "Bronx Lab School": "Consortium",
+  "Brooklyn Collaborative School": "Consortium",
+  "East Side Community School": "Consortium",
+  "El Puente Academy for Peace and Justice": "Consortium",
+  "Fannie Lou Hamer Freedom High School": "Consortium",
+  "Forsyth Satellite Academy": "Consortium",
+  "Lyons Community School": "Consortium",
+  "School Without Walls": "Consortium",
+  "University Heights High School": "Consortium",
+  
+  "Crotona International High School": "International",
+  "Flushing High School": "International",
+  "International High School @ Prospect Heights": "International",
+  "International High School at Union Square": "International",
+  "International HS at Union Square": "International",
+  "Internationals Network": "International",
+  "The Manhattan International High School": "International",
+  "Pan American International HS": "International",
+  
+  "NYC Outward Bound": "Outward Bound",
+  
+  "CIOB District Team": "District/Other",
+  "North Star Academy": "District/Other",
+  "Speyer Legacy School": "District/Other",
+  "Virtual Innovators Academy": "District/Other"
+};
+
+// Data extracted and normalized from the provided text
+const rawFellows = [
+  { id: "1", name: "Brendan Harney", email: "brendan.harney@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "2", name: "Jacob Prairie", email: "jacob.prairie@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "3", name: "Christina Crisfield", email: "christina.crisfield@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "4", name: "Crystal", email: "crystal@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "5", name: "Glen", email: "glen@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "6", name: "J. Long", email: "jlong22@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
+  { id: "7", name: "E. Coppola", email: "ecoppola5@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
+  { id: "8", name: "A. Katine", email: "akatine@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
+  { id: "9", name: "S. Bruss", email: "sbruss@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
+  { id: "10", name: "E. Castro", email: "ecastro16@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
+  { id: "11", name: "A. Uy", email: "auy@schools.nyc.gov", school: "Crotona International High School", role: "Educator", status: "Accepted", category: "International" },
+  { id: "12", name: "J. Vincente", email: "jvincente2@schools.nyc.gov", school: "East Side Community School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "13", name: "A. Swenson", email: "aswenso@schools.nyc.gov", school: "East Side Community School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "14", name: "C. Costello", email: "Ccostello2@schools.nyc.gov", school: "El Puente Academy for Peace and Justice", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "15", name: "Ed B.", email: "EdB@FLHFHS.org", school: "Fannie Lou Hamer Freedom High School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "16", name: "Yousra", email: "yousra@flushinginternational.org", school: "Flushing High School", role: "Educator", status: "Accepted", category: "International" },
+  { id: "17", name: "Eloi", email: "eloi@flushinginternational.org", school: "Flushing High School", role: "Educator", status: "Accepted", category: "International" },
+  { id: "18", name: "M. Britto", email: "mbritto2@schools.nyc.gov", school: "Forsyth Satellite Academy", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "19", name: "J. Rojas", email: "jrojas27@schools.nyc.gov", school: "Forsyth Satellite Academy", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "20", name: "M. Sane", email: "M.sane@ihsph.org", school: "International High School @ Prospect Heights", role: "Educator", status: "Accepted", category: "International" },
+  { id: "21", name: "S. DeSilva", email: "sdesilv2@schools.nyc.gov", school: "International High School at Union Square", role: "Educator", status: "Accepted", category: "International" },
+  { id: "22", name: "A. Dvorak", email: "advorak@schools.nyc.gov", school: "International HS at Union Square", role: "Educator", status: "Accepted", category: "International" },
+  { id: "23", name: "Khalia Joseph", email: "khalia.joseph@internationalsnetwork.org", school: "Internationals Network", role: "Network Leader", status: "Accepted", category: "International" },
+  { id: "24", name: "D. Wilson", email: "DWilson36@schools.nyc.gov", school: "Lyons Community School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "25", name: "S. Kern", email: "skern@northstaracademy.org", school: "North Star Academy", role: "Educator", status: "Accepted", category: "District/Other" },
+  { id: "26", name: "Mike Taubman", email: "mike.taubman@northstaracademy.org", school: "North Star Academy", role: "Educator", status: "Accepted", category: "District/Other" },
+  { id: "27", name: "Dolan Morgan", email: "dolan.morgan@internationalsnetwork.org", school: "NYC Outward Bound", role: "Educator", status: "Accepted", category: "Outward Bound" },
+  { id: "28", name: "R. Bonilla", email: "rbonilla7@schools.nyc.gov", school: "School Without Walls", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "29", name: "J. Ferraiolo", email: "jferraiolo@schools.nyc.gov", school: "School Without Walls", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "30", name: "A. Kang", email: "akang@mihsnyc.org", school: "The Manhattan International High School", role: "Educator", status: "Accepted", category: "International" },
+  { id: "31", name: "M. Ahn", email: "mahn@mihsnyc.org", school: "The Manhattan International High School", role: "Educator", status: "Accepted", category: "International" },
+  { id: "32", name: "W. Abreu", email: "Wabreu5@schools.nyc.gov", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "33", name: "N. Weber", email: "nweber5@uhhsnyc.org", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "34", name: "Brett Xu", school: "Pan American International HS", role: "Educator", status: "Waitlist", category: "International" },
+  { id: "35", name: "Tess Ramsey", school: "Speyer Legacy School", role: "Educator", status: "Waitlist", category: "District/Other" },
+  { id: "36", name: "Tania Mohammed", school: "The Manhattan International High School", role: "Educator", status: "Waitlist", category: "International" },
+  { id: "37", name: "Rusmi Ramli", school: "University Heights High School", role: "Educator", status: "Waitlist", category: "Consortium" },
+  { id: "38", name: "Jessica Rodriguez", school: "University Heights High School", role: "Educator", status: "Waitlist", category: "Consortium" },
+  { id: "39", name: "S. Peters", email: "speters9@schools.nyc.gov", school: "Virtual Innovators Academy", role: "Educator", status: "Accepted", category: "District/Other" },
+] as const;
+
+export const fellows: Fellow[] = rawFellows.map(fellow => ({
+  ...fellow,
+  bio: `An experienced ${fellow.role.toLowerCase()} at ${fellow.school}, dedicated to transforming student learning experiences through technology and innovation.`,
+  appDescription: "Developed an AI-powered feedback assistant that helps students refine their performance assessments through iterative, personalized guidance.",
+  impact: "Reduced grading time by 40% while increasing student engagement in the revision process. Students reported feeling more confident in their final submissions.",
+  quote: "This fellowship has completely reshaped how I view the role of technology in the classroom.",
+  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Placeholder
+}));
+
+export const contextData = {
+  consortium: {
+    title: "Consortium Schools",
+    description: "The New York Performance Standards Consortium was founded two decades ago on the belief that there was a better way to assess student learning than dependence upon standardized testing. The Consortium’s system is based on in-depth literacy, mathematical problem-solving, application of the scientific method, social studies research, a span of mediums for exhibiting learning, and a chance for students to have a voice and proud ownership of their work. Instead of standard Regents exams, students complete a series of performance assessments to graduate."
+  },
+  international: {
+    title: "International Schools",
+    description: "International schools and academies are for newcomers who have been in the country for four years or less at their time of admission. Students are diverse, coming from over 130 countries, and represent a multitude of racial and ethnic groups, with over 100 native languages spoken in our schools. Classroom curriculum is based on project-based learning where students integrate language and content development in order to accelerate academic language learning."
+  },
+  outwardBound: {
+    title: "Outward Bound Schools",
+    description: "NYC Outward Bound Schools joins together demanding and engaging learning with an emphasis on community and character. They honor students’ roots and dreams while preparing them for success in college, careers, and citizenship. Curriculum is based on field experiences and projects that engage students critical thinking and problem solving skills. The Crew advisory model throughout high school helps to build a strong community and ongoing support for students’ social-emotional development."
+  }
+};
