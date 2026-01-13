@@ -96,19 +96,6 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
 // Manually specific updates based on Broad Forum Presentation data
 const presentationFellows: Partial<Fellow>[] = [
   {
-    name: "Arden", // Inferred from "Arden's Math Non-Routine Thought Partner" - Mapping to closest match or assuming generic for now if not in list, but let's assume valid ID if found.
-    // Wait, no Arden in original list. Let's look for match. 
-    // "Arden" is not in the list. Maybe "A. Swenson"? Or "A. Uy"? Or "A. Katine"?
-    // "Arden's tool" -> "Arden’s Math Non-Routine Thought Partner"
-    // Let's assume one of the "A." names or a missing fellow. 
-    // Given "Arden" is explicitly named in the new context but not fully in the old list, 
-    // I will check if I can match "Arden" to any existing name or add if strictly needed.
-    // Scanning list... "A. Swenson", "A. Uy", "A. Kang", "A. Dvorak", "A. Katine". 
-    // Without confirmation, I will stick to general updates or update specific ones mentioned clearly.
-    // "Joe Vincent" -> "J. Vincente" (ID 12)
-    // "Brenden" -> "Brendan Harney" (ID 1)
-  },
-  {
     id: "1", // Brendan Harney
     appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review.",
     quote: "We need tools that guide thinking, not replace it.",
@@ -150,4 +137,27 @@ export const broadContext = {
   subtitle: "A Teacher-Centered Approach to Innovation in NYC Public Schools",
   description: "Much of the current conversation about AI in schools leans toward shortcuts. Faster grading. Quick lesson plans. A smoother workflow. None of that answers the real question facing classrooms: How do we help students practice sustained attention, make sense of complex ideas, and build their own interpretations in a world where a machine can produce a passable answer in seconds?",
   mission: "In our district, we are trying to keep the focus on deep and meaningful thinking. AI should strengthen the parts of learning that require patience, judgment, reflection, and conversation. It should not replace them."
+};
+
+export const programDetails = {
+  title: "About the Program",
+  description: "The AI Innovation Fellows Program is a unique opportunity for CIOB educators and leaders to design and pilot real-world uses of AI that enhance instruction, address existing challenges, and build next-generation practices rooted in responsible innovation.",
+  commitments: [
+    {
+      title: "Design & Innovation",
+      description: "Direct collaboration with Playlab Learning Engineers for custom AI app creation, focusing on tools that deepen student thinking."
+    },
+    {
+      title: "Community of Practice",
+      description: "8-session learning series with targeted breakout groups and dedicated site visits for personalized coaching."
+    },
+    {
+      title: "Impact & Scaling",
+      description: "Fellows document their impact and present their tools at the AI Innovation Fellows Showcase, contributing to a collection of proven models for district-wide scaling."
+    }
+  ],
+  images: [
+    "@assets/IMG_5922_1768318177323.jpg",
+    "@assets/IMG_6404_1768318179239.jpg"
+  ]
 };
