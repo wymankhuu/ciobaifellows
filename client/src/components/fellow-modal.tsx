@@ -8,9 +8,10 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
 import { Fellow } from "@/lib/fellows-data";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Quote, School, Lightbulb, TrendingUp, BookOpen } from "lucide-react";
+import { Quote, School, Lightbulb, TrendingUp, BookOpen, QrCode, ExternalLink, AlertCircle } from "lucide-react";
 
 interface FellowModalProps {
   fellow: Fellow | null;
@@ -27,6 +28,11 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
     .join("")
     .slice(0, 2)
     .toUpperCase();
+
+  // Truncate bio for sidebar
+  const shortBio = fellow.bio && fellow.bio.length > 200 
+    ? fellow.bio.substring(0, 200) + "..." 
+    : fellow.bio;
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -57,6 +63,35 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
 
             <Separator className="bg-primary/10" />
 
+            {/* Educator Bio Short */}
+            <div className="space-y-2">
+               <h4 className="font-serif font-bold text-sm text-primary/80 uppercase tracking-widest text-xs">About</h4>
+               <p className="text-sm text-muted-foreground leading-relaxed">
+                 {shortBio}
+               </p>
+            </div>
+
+            <Separator className="bg-primary/10" />
+
+            {/* App Link Section */}
+            <div className="space-y-4">
+              <div className="bg-white p-4 rounded-xl border border-border shadow-sm flex flex-col items-center gap-3">
+                 <div className="w-32 h-32 bg-primary/5 rounded-lg flex items-center justify-center">
+                    <QrCode className="w-20 h-20 text-primary/20" />
+                 </div>
+                 <Button 
+                   className="w-full bg-accent hover:bg-accent/90 text-white font-medium group" 
+                   asChild
+                 >
+                   <a href={fellow.playlabUrl} target="_blank" rel="noopener noreferrer">
+                     View App <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                   </a>
+                 </Button>
+              </div>
+            </div>
+
+            <Separator className="bg-primary/10" />
+
             <div className="space-y-4">
               <div className="relative p-4 bg-white rounded-lg shadow-sm border border-primary/5">
                 <Quote className="absolute top-2 left-2 w-4 h-4 text-accent/40" />
@@ -79,9 +114,6 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/10 pointer-events-none group-hover:bg-transparent transition-colors">
-                  {/* Overlay placeholder if needed */}
-                </div>
               </div>
 
               <div className="grid gap-8">
@@ -93,9 +125,20 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
                     </div>
                     <h3 className="text-xl font-serif font-bold text-primary">The Innovation</h3>
                   </div>
-                  <p className="text-lg leading-relaxed text-muted-foreground font-light">
+                  <p className="text-lg leading-relaxed text-muted-foreground font-light mb-6">
                     {fellow.appDescription}
                   </p>
+
+                  {/* Why this is important */}
+                  <div className="bg-blue-50/50 p-5 rounded-lg border-l-4 border-accent">
+                     <div className="flex items-center gap-2 mb-2 text-accent-foreground/80">
+                        <AlertCircle className="w-4 h-4" />
+                        <h4 className="font-bold text-sm uppercase tracking-wide">Why This Matters</h4>
+                     </div>
+                     <p className="text-base text-foreground/80 leading-relaxed italic">
+                        {fellow.importance}
+                     </p>
+                  </div>
                 </section>
 
                 <div className="grid md:grid-cols-2 gap-8">

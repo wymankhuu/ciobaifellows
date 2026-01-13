@@ -11,6 +11,8 @@ export interface Fellow {
   impact?: string;
   videoUrl?: string; // Placeholder for embedded video
   quote?: string;
+  playlabUrl?: string; // Placeholder for app link
+  importance?: string; // Why this is important
 }
 
 const schoolCategories: Record<string, Fellow['category']> = {
@@ -90,7 +92,9 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
   appDescription: "Developed an AI-powered feedback assistant that helps students refine their performance assessments through iterative, personalized guidance.",
   impact: "Reduced grading time by 40% while increasing student engagement in the revision process. Students reported feeling more confident in their final submissions.",
   quote: "This fellowship has completely reshaped how I view the role of technology in the classroom.",
-  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Placeholder
+  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder
+  playlabUrl: "https://www.playlab.ai", // Placeholder
+  importance: "This tool bridges the gap between assessment and learning, ensuring that students receive immediate, actionable feedback that deepens their understanding rather than just correcting their mistakes."
 }));
 
 // Manually specific updates based on Broad Forum Presentation data
@@ -99,12 +103,14 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "1", // Brendan Harney
     appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review.",
     quote: "We need tools that guide thinking, not replace it.",
-    impact: "Helps students practice sustained attention and judgment by structuring how they critique and support their peers."
+    impact: "Helps students practice sustained attention and judgment by structuring how they critique and support their peers.",
+    importance: "Peer feedback is often superficial. This tool structures the process so students must engage deeply with criteria and their peer's work."
   },
   {
     id: "12", // J. Vincente (Joe Vincent)
     appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
-    impact: "Reveals misconceptions that would otherwise stay hidden until the actual defense, allowing students to refine their arguments and understanding beforehand."
+    impact: "Reveals misconceptions that would otherwise stay hidden until the actual defense, allowing students to refine their arguments and understanding beforehand.",
+    importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation."
   }
 ];
 
