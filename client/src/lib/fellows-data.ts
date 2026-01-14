@@ -83,6 +83,10 @@ const rawFellows = [
   {
     id: "22", // A. Dvorak
     name: "Alexander Dvorak",
+    school: "International HS at Union Square",
+    role: "Educator",
+    status: "Accepted",
+    category: "International",
     appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
     quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
     impact: "Teachers are using this tool to instantly find the 'low-hanging fruit' for increasing cognitive demand in their lessons. It has transformed lesson planning from a solitary struggle into a collaborative dialogue, resulting in tasks that explicitly require higher-order thinking rather than just procedural compliance.",
