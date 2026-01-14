@@ -20,6 +20,8 @@ import sPetersPhoto from "@assets/CleanShot_2026-01-14_at_17.32.21@2x_1768429948
 import eVillanuevaQr from "@assets/qrcode-MAKERSINACTION_1768430239291.png";
 import eVillanuevaPhoto from "@assets/CleanShot_2026-01-14_at_17.37.25@2x_1768430253453.png";
 import eVillanuevaCover from "@assets/image_1768430279323.png";
+import nWeberQr from "@assets/qrcode-ThinkPhysLearnPhysicsbyThinkingLikeaPhysicist_1768430551590.png";
+import nWeberPhoto from "@assets/CleanShot_2026-01-14_at_17.43.22@2x_1768430610114.png";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 
 export interface Fellow {
@@ -231,6 +233,18 @@ const presentationFellows: Partial<Fellow>[] = [
     qrCode: eVillanuevaQr,
     photoUrl: eVillanuevaPhoto,
     coverImage: eVillanuevaCover,
+    coverStyle: 'contain-navy'
+  },
+  {
+    id: "33", // N. Weber
+    name: "Nathan Weber",
+    appDescription: "ThinkPhys: Learn Physics by Thinking Like a Physicist. An AI tutor for AP Physics 1 and C: E&M that guides student reasoning, reveals misconceptions, and leads them step-by-step toward conceptual understanding without simply providing answers.",
+    impact: "This tool pushes students beyond procedural fluency to a higher Depth of Knowledge (DOK). It requires them to articulate their reasoning and connect mathematical solutions to physical concepts, ensuring they truly understand the 'why' behind the physics, not just the 'how' of the calculation.",
+    importance: "Physics often becomes an exercise in plugging numbers into formulas. This tool insists on conceptual grounding, training students to think like physicists who first understand the system before applying the math.",
+    playlabUrl: "https://www.playlab.ai/project/cmh98r1cd5ak3fr0u7yoeoi4t",
+    qrCode: nWeberQr,
+    photoUrl: nWeberPhoto,
+    coverImage: ciobLogo,
     coverStyle: 'contain-navy'
   }
 ];
