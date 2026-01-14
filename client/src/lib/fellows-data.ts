@@ -118,6 +118,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "8", // Arden Katine
     name: "Arden Katine",
+    role: "District Math Instructional Coach",
     appDescription: "Math Thought Partner. An AI tutor designed to support students with non-routine math problems through strategic, non-leading questioning. Rather than providing answers, it acts as a coach—helping students identify stuck points, visualize problems, and journal their discoveries to build long-term problem-solving skills.",
     quote: "We need to help students move forward through questioning, not telling.",
     impact: "Students are taking ownership of their learning journey. By having a tool that refuses to give the answer but always offers a way forward, students are building the resilience and agency needed to tackle complex mathematical challenges without immediate teacher intervention.",
