@@ -223,7 +223,7 @@ export const broadContext = {
 
 export const programDetails = {
   title: "About the Program",
-  description: "The AI Innovation Fellows Program is a unique opportunity for CIOB educators and leaders to design and pilot real-world uses of AI that enhance instruction, address existing challenges, and build next-generation practices rooted in responsible innovation.",
+  description: "The AI Design Fellows Program is a unique opportunity for CIOB educators and leaders to design and pilot real-world uses of AI that enhance instruction, address existing challenges, and build next-generation practices rooted in responsible innovation.",
   commitments: [
     {
       title: "Design & Innovation",
@@ -235,7 +235,7 @@ export const programDetails = {
     },
     {
       title: "Impact & Scaling",
-      description: "Fellows document their impact and present their tools at the AI Innovation Fellows Showcase, contributing to a collection of proven models for district-wide scaling."
+      description: "Fellows document their impact and present their tools at the AI Design Fellows Showcase, contributing to a collection of proven models for district-wide scaling."
     }
   ],
   images: [

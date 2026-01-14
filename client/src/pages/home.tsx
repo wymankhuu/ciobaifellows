@@ -12,6 +12,7 @@ import { Separator } from "@/components/ui/separator";
 import img5922 from "@assets/IMG_5922_1768318177323.jpg";
 import img6404 from "@assets/IMG_6404_1768318179239.jpg";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
+import playlabLogo from "@assets/Playlab_Logo_1768428941734.png";
 
 export default function Home() {
   const [selectedFellow, setSelectedFellow] = useState<Fellow | null>(null);
@@ -49,7 +50,7 @@ export default function Home() {
                </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight">
-              CIOB AI Innovator Fellows
+              CIOB AI Design Fellows
             </h1>
             <p className="text-xl md:text-2xl font-light text-primary-foreground/80 max-w-2xl mx-auto font-serif italic mb-8">
               "Does this use of AI deepen thinking, or does it flatten it?"
@@ -214,9 +215,17 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-primary text-primary-foreground border-t border-white/10 py-12 mt-20">
-        <div className="container mx-auto px-4 text-center space-y-4">
+        <div className="container mx-auto px-4 text-center space-y-8">
           <p className="font-serif text-xl italic">"AI should strengthen the parts of learning that require patience, judgment, reflection, and conversation."</p>
-          <p className="text-sm opacity-60 font-sans">© 2026 CIOB AI Innovator Fellows Program • NYC Public Schools</p>
+          
+          {/* Playlab Logo */}
+          <div className="flex justify-center">
+            <a href="https://playlab.ai" target="_blank" rel="noopener noreferrer" className="opacity-80 hover:opacity-100 transition-opacity">
+              <img src={playlabLogo} alt="Playlab" className="h-8 w-auto" />
+            </a>
+          </div>
+
+          <p className="text-sm opacity-60 font-sans">© 2026 CIOB AI Design Fellows Program • NYC Public Schools</p>
         </div>
       </footer>
 
