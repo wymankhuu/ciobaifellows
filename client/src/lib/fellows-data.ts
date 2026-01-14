@@ -16,6 +16,7 @@ import jVincenteCover from "@assets/DSCF4069_1768428691241.JPG";
 import eCoppolaQr from "@assets/qrcode-CreateaLearningPlan_1768429416319.png";
 import eCoppolaPhoto from "@assets/CleanShot_2026-01-14_at_17.23.49@2x_1768429435262.png";
 import sPetersQr from "@assets/qrcode-EchoSpace_(1)_1768429866393.png";
+import sPetersPhoto from "@assets/CleanShot_2026-01-14_at_17.32.21@2x_1768429948742.png";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 
 export interface Fellow {
@@ -214,7 +215,8 @@ const presentationFellows: Partial<Fellow>[] = [
     impact: "This tool fundamentally shifts learning from passive group participation to active, shared ownership. By scaffolding the 'how' of collaboration—resolving conflicts, clarifying roles, and ensuring equitable voice—it allows students to focus their cognitive energy on co-constructing knowledge and reasoning together, rather than getting stuck on logistics.",
     importance: "Group work often fails due to unstructured dynamics. This tool scaffolds the process, ensuring that collaboration supports higher-order thinking and that every student's voice is valued.",
     playlabUrl: "https://www.playlab.ai/project/cmgr2swd93bwpis0vddordmx7",
-    qrCode: sPetersQr
+    qrCode: sPetersQr,
+    photoUrl: sPetersPhoto
   }
 ];
 
