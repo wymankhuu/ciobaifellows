@@ -35,6 +35,7 @@ import gMeinPhoto from "@assets/CleanShot_2026-01-14_at_18.15.12@2x_176843251838
 import gMeinCover from "@assets/CleanShot_2026-01-14_at_18.14.05@2x_1768432460524.png";
 import aSylviaQr from "@assets/qrcode-TeacherLessonDOKAnalyzer_1768432969009.png";
 import aSylviaPhoto from "@assets/CleanShot_2026-01-14_at_18.23.05@2x_1768432991865.png";
+import aSylviaCover from "@assets/image_1768433140690.png";
 
 export interface Fellow {
   id: string;
@@ -130,8 +131,8 @@ const presentationFellows: Partial<Fellow>[] = [
     playlabUrl: "https://www.playlab.ai/project/cm0fcpuvw0mil6q60r6y0ma3i",
     qrCode: aSylviaQr,
     photoUrl: aSylviaPhoto,
-    coverImage: ciobLogo,
-    coverStyle: 'contain-navy'
+    coverImage: aSylviaCover,
+    coverStyle: 'default'
   },
   {
     id: "4", // Crystal Yeung
@@ -167,6 +168,7 @@ const presentationFellows: Partial<Fellow>[] = [
     playlabUrl: "https://www.playlab.ai/project/cmiz47auf012ljr0uljchkrpo",
     qrCode: bHarneyQr,
     coverImage: bHarneyCover,
+    coverStyle: 'default',
     photoUrl: bHarneyPhoto
   },
   {
