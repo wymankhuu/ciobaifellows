@@ -19,7 +19,7 @@ import sPetersQr from "@assets/qrcode-EchoSpace_(1)_1768429866393.png";
 import sPetersPhoto from "@assets/CleanShot_2026-01-14_at_17.32.21@2x_1768429948742.png";
 import eVillanuevaQr from "@assets/qrcode-MAKERSINACTION_1768430239291.png";
 import eVillanuevaPhoto from "@assets/CleanShot_2026-01-14_at_17.37.25@2x_1768430253453.png";
-import eVillanuevaCover from "@assets/image_1768430279323.png";
+import eVillanuevaCover from "@assets/DSCF4071_1768432078513.JPG";
 import nWeberQr from "@assets/qrcode-ThinkPhysLearnPhysicsbyThinkingLikeaPhysicist_1768430551590.png";
 import nWeberPhoto from "@assets/CleanShot_2026-01-14_at_17.43.22@2x_1768430610114.png";
 import tCrisfieldQr from "@assets/qrcode-EmotionalRegulationToolbox_1768430792304.png";
@@ -229,7 +229,7 @@ const presentationFellows: Partial<Fellow>[] = [
     qrCode: eVillanuevaQr,
     photoUrl: eVillanuevaPhoto,
     coverImage: eVillanuevaCover,
-    coverStyle: 'contain-navy'
+    coverStyle: 'default'
   },
   {
     id: "28", // Rosa Bonilla
