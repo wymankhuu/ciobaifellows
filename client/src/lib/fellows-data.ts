@@ -111,6 +111,15 @@ const presentationFellows: Partial<Fellow>[] = [
     appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
     impact: "Reveals misconceptions that would otherwise stay hidden until the actual defense, allowing students to refine their arguments and understanding beforehand.",
     importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation."
+  },
+  {
+    id: "14", // C. Costello
+    appDescription: "ELA & Debate Research Writing Coach. An AI thought partner that provides follow-up questions to research submissions, encouraging students to develop and improve persuasive writing and personal reflections. It targets support based on subject rubrics (ELA, Math, Science, Social Studies) without providing direct answers.",
+    quote: "We need to encourage, develop, and improve persuasive writing through critical thinking, not just error correction.",
+    impact: "Provides specific, positive reinforcement on grammar and punctuation while pushing for authentic student responses. Supports students from initial drafts to visual presentations and data analysis.",
+    videoUrl: "https://vocalvideo.com/embed/v1/videos/223934",
+    playlabUrl: "https://www.playlab.ai/project/cmkbambgo2s5bg90u11q2e34r",
+    importance: "This tool shifts the focus from 'getting it right' to 'thinking it through,' requiring full sentences and deep reflection while ensuring students maintain ownership of their authentic voice."
   }
 ];
 
