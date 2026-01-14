@@ -28,6 +28,8 @@ import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 import videoPlaceholder from "@assets/image_1768431182032.png";
 import cYeungQr from "@assets/qrcode-CrystalsFeedbackAIforHorrorStories_1768431542616.png";
 import cYeungPhoto from "@assets/CleanShot_2026-01-14_at_17.59.12@2x_1768431558449.png";
+import rBonillaQr from "@assets/qrcode-DifferentiationwithProficiencyLevelsinSpanish_1768431916293.png";
+import rBonillaPhoto from "@assets/CleanShot_2026-01-14_at_18.07.35@2x_1768432062263.png";
 
 export interface Fellow {
   id: string;
@@ -227,6 +229,18 @@ const presentationFellows: Partial<Fellow>[] = [
     qrCode: eVillanuevaQr,
     photoUrl: eVillanuevaPhoto,
     coverImage: eVillanuevaCover,
+    coverStyle: 'contain-navy'
+  },
+  {
+    id: "28", // Rosa Bonilla
+    name: "Rosa Bonilla",
+    appDescription: "Differentiation with Proficiency Levels in Spanish. An AI assistant for Spanish language education that curates and adapts texts for diverse learners. It provides versions of the same text at multiple proficiency levels (beginner to advanced/heritage), ensuring all students can access age-appropriate, intellectually engaging content regardless of their language background.",
+    impact: "Ensures equitable access to rigorous content at School Without Walls. By instantly generating scaffolded versions of authentic texts—along with vocabulary glossaries for beginners and analytical prompts for heritage speakers—it allows the entire class to engage with the same essential ideas and higher-order thinking questions.",
+    importance: "True inclusion means everyone accesses the same complex ideas, not watered-down content. This tool makes differentiation manageable, ensuring that language proficiency isn't a barrier to intellectual engagement.",
+    playlabUrl: "https://www.playlab.ai/project/cmhzeokrodtfxgf0uoy7jfrt7",
+    qrCode: rBonillaQr,
+    photoUrl: rBonillaPhoto,
+    coverImage: ciobLogo,
     coverStyle: 'contain-navy'
   },
   {
