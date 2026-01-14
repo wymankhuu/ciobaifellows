@@ -3,6 +3,8 @@ import cCostelloPhoto from "@assets/CleanShot_2026-01-14_at_16.24.15@2x_17684258
 import eCastroQr from "@assets/qrcode-CIOBHOTHelper_1768426557336.png";
 
 import eCastroPhoto from "@assets/CleanShot_2026-01-14_at_16.39.04@2x_1768426750429.png";
+import bHarneyQr from "@assets/qrcode-NearPeerFeedbacksciencev2_1768427021869.png";
+import bHarneyCover from "@assets/CleanShot_2026-01-14_at_16.44.19@2x_1768427080910.png";
 
 export interface Fellow {
   id: string;
@@ -21,6 +23,7 @@ export interface Fellow {
   importance?: string; // Why this is important
   qrCode?: string;
   photoUrl?: string;
+  coverImage?: string;
 }
 
 const schoolCategories: Record<string, Fellow['category']> = {
@@ -109,10 +112,13 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
 const presentationFellows: Partial<Fellow>[] = [
   {
     id: "1", // Brendan Harney
-    appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review.",
+    appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review. Working to provide mastery and standards based feedback for science students across all grades.",
     quote: "We need tools that guide thinking, not replace it.",
     impact: "Helps students practice sustained attention and judgment by structuring how they critique and support their peers.",
-    importance: "Peer feedback is often superficial. This tool structures the process so students must engage deeply with criteria and their peer's work."
+    importance: "Peer feedback is often superficial. This tool structures the process so students must engage deeply with criteria and their peer's work.",
+    playlabUrl: "https://www.playlab.ai/project/cmiz47auf012ljr0uljchkrpo",
+    qrCode: bHarneyQr,
+    coverImage: bHarneyCover
   },
   {
     id: "12", // J. Vincente (Joe Vincent)

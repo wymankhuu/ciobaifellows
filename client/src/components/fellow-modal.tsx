@@ -109,15 +109,23 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
           {/* Main Content */}
           <ScrollArea className="h-full max-h-[90vh]">
             <div className="p-8 space-y-8">
-              {/* Video Section */}
+              {/* Video/Image Section */}
               <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-black/5 group relative">
-                <iframe
-                  className="w-full h-full"
-                  src={fellow.videoUrl}
-                  title="Fellow Journey Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                {fellow.coverImage ? (
+                  <img 
+                    src={fellow.coverImage} 
+                    alt="Project Cover" 
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <iframe
+                    className="w-full h-full"
+                    src={fellow.videoUrl}
+                    title="Fellow Journey Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                )}
               </div>
 
               <div className="grid gap-8">
