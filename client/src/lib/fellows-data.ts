@@ -177,9 +177,9 @@ const presentationFellows: Partial<Fellow>[] = [
     impact: "Students are moving towards approaching their defenses with the confidence of experts. By stress-testing their knowledge beforehand, they are shifting from rote memorization to demonstrating true mastery during their presentations.",
     importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation.",
     playlabUrl: "https://www.playlab.ai/project/cmhw3oazw08sbk10ub24yysha",
+    videoUrl: "https://vocalvideo.com/embed/v1/videos/224195",
     qrCode: jVincenteQr,
     photoUrl: jVincentePhoto,
-    coverImage: jVincenteCover
   },
   {
     id: "14", // C. Costello
