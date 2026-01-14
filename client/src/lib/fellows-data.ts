@@ -10,6 +10,9 @@ import aDvorakQr from "@assets/qrcode-HOTBotYourHigherOrderThinkingThoughtPartne
 import aDvorakPhoto from "@assets/CleanShot_2026-01-14_at_16.54.28@2x_1768427682769.png";
 import aKatineQr from "@assets/qrcode-V2MathThoughtPartnerforStudents_1768428109571.png";
 import aKatinePhoto from "@assets/image001_1768428190212.jpg";
+import jVincenteQr from "@assets/qrcode-CIOBSciencePBATPresentationCoach_1768428612972.png";
+import jVincentePhoto from "@assets/CleanShot_2026-01-14_at_17.10.51@2x_1768428662566.png";
+import jVincenteCover from "@assets/DSCF4069_1768428691241.JPG";
 
 export interface Fellow {
   id: string;
@@ -141,9 +144,14 @@ const presentationFellows: Partial<Fellow>[] = [
   },
   {
     id: "12", // J. Vincente (Joe Vincent)
+    name: "Joseph Vincente",
     appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
     impact: "Reveals misconceptions that would otherwise stay hidden until the actual defense, allowing students to refine their arguments and understanding beforehand.",
-    importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation."
+    importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation.",
+    playlabUrl: "https://www.playlab.ai/project/cmhw3oazw08sbk10ub24yysha",
+    qrCode: jVincenteQr,
+    photoUrl: jVincentePhoto,
+    coverImage: jVincenteCover
   },
   {
     id: "14", // C. Costello
