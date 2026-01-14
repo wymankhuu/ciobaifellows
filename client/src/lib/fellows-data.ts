@@ -36,6 +36,7 @@ import gMeinCover from "@assets/CleanShot_2026-01-14_at_18.14.05@2x_176843246052
 import aSylviaQr from "@assets/qrcode-TeacherLessonDOKAnalyzer_1768432969009.png";
 import aSylviaPhoto from "@assets/CleanShot_2026-01-14_at_18.23.05@2x_1768432991865.png";
 import aSylviaCover from "@assets/image_1768433140690.png";
+import jdQr from "@assets/qrcode-ThinkingThroughLearning_(1)_1768433720161.png";
 
 export interface Fellow {
   id: string;
@@ -90,7 +91,7 @@ const schoolCategories: Record<string, Fellow['category']> = {
 const rawFellows = [
   { id: "40", name: "Al Sylvia", school: "Bronx Lab School", role: "Principal", status: "Accepted", category: "Consortium" },
   { id: "1", name: "Brendan Harney", email: "brendan.harney@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "2", name: "Jacob Prairie", email: "jacob.prairie@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "2", name: "JD", school: "Bronx Lab School", role: "Instructional Coach", status: "Accepted", category: "Consortium" },
   { id: "3", name: "Christina Crisfield", email: "christina.crisfield@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "4", name: "Crystal Yeung", email: "crystal@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "5", name: "Glen Meinschein", email: "glen@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
@@ -133,6 +134,19 @@ const presentationFellows: Partial<Fellow>[] = [
     photoUrl: aSylviaPhoto,
     coverImage: aSylviaCover,
     coverStyle: 'default'
+  },
+  {
+    id: "2", // JD
+    name: "JD",
+    role: "Instructional Coach",
+    appDescription: "Thinking Through Learning. A thinking partner for teachers to help them think through their lessons before teaching them, reflect on lessons after they are taught, and to brainstorm strategies based on classroom experiences.",
+    quote: "Teaching is challenging work. We need tools that support reflection without judgment, helping us understand the deeper purpose of our lessons.",
+    impact: "Provides educators with a non-judgmental space to anticipate classroom dynamics, refine their timing, and reflect on what's working. This fosters a culture of continuous improvement and thoughtful planning.",
+    importance: "Reflection is key to professional growth, but teachers often lack the time or a neutral partner to do it effectively. This tool bridges that gap.",
+    playlabUrl: "https://www.playlab.ai/project/cm5ztrj3j0vs911xohrz36vgp",
+    qrCode: jdQr,
+    coverImage: ciobLogo,
+    coverStyle: 'contain-navy'
   },
   {
     id: "4", // Crystal Yeung
