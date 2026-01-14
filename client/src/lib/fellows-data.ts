@@ -353,64 +353,53 @@ export const broadContext = {
   mission: "In our district, we are trying to keep the focus on deep and meaningful thinking. AI should strengthen the parts of learning that require patience, judgment, reflection, and conversation. It should not replace them."
 };
 
+export const programRationale = {
+  title: "Program Design and Rationale",
+  description: "It is critical to bring in educators from across the network with deep expertise and diverse roles to help shape this work. By centering those closest to the classroom, we increase agency and ensure that AI tools are designed to meet authentic pedagogical needs rather than external mandates."
+};
+
 export const programDetails = {
   title: "Program Timeline",
-  description: "An intensive journey from concept to scalable impact, designed for educators ready to push boundaries.",
+  description: "An intensive journey from concept to pilot, designed for educators ready to push boundaries.",
   timeline: [
     {
       session: "1",
       title: "Foundation & Vision",
-      date: "Week of Sept 29",
-      format: "In-Person",
       description: "Establish shared vision, responsible AI frameworks, and form cohort teams. Fellows define their initial app concept proposals."
     },
     {
       session: "2",
       title: "Co-Design & Prototyping",
-      date: "Week of Oct 13",
-      format: "Virtual",
       description: "Deep dive into Playlab design methodology and rapid prototyping. Fellows build initial prototypes and establish testing protocols."
     },
     {
       session: "3",
       title: "Designing with End in Mind",
-      date: "Week of Oct 27",
-      format: "Virtual",
       description: "Focus on student-facing apps, accessibility, and cognitive load. Integrate student voice and refine tools based on feedback."
     },
     {
       session: "4",
-      title: "Implementation & Scale",
-      date: "Week of Nov 10",
-      format: "In-Person",
-      description: "Prepare for classroom deployment and educator training. Fellows design implementation guides and troubleshoot challenges."
+      title: "Implementation & Pilot",
+      description: "Prepare for classroom deployment in real contexts. Fellows design implementation guides and troubleshoot challenges."
     },
     {
       session: "5",
       title: "Assessment & Iteration",
-      date: "Week of Nov 24",
-      format: "Virtual",
       description: "Analyze impact data and evidence-based iteration. Fellows share learnings and create data-driven improvement plans."
     },
     {
       session: "6",
-      title: "Advanced Development",
-      date: "Week of Dec 8",
-      format: "Virtual",
+      title: "Trust and Safety Considerations",
       description: "Direct collaboration with Playlab Engineers on advanced features and technical optimization. MVPs ready to share."
     },
     {
       session: "7",
-      title: "Showcase Preparation",
-      date: "Week of Dec 15",
-      format: "In-Person",
+      title: "Evaluation and Feedback",
       description: "Finalize demonstrations and case studies. Focus on demo creation, documentation, and presentation skills."
     },
     {
       session: "8",
       title: "Public Showcase",
-      date: "January",
-      format: "In-Person + Public",
       description: "Public presentations of portfolios and implementation strategies. Demonstrate tools and share lessons with the community."
     }
   ],

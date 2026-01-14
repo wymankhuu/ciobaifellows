@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { fellows, contextData, broadContext, programDetails, Fellow } from "@/lib/fellows-data";
+import { fellows, contextData, broadContext, programDetails, programRationale, Fellow } from "@/lib/fellows-data";
 import { FellowCard } from "@/components/fellow-card";
 import { FellowModal } from "@/components/fellow-modal";
 import { motion } from "framer-motion";
-import { BrainCircuit, Sparkles, Users, ArrowRight, BookOpenCheck, School, Network, PenTool } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { BrainCircuit, Sparkles, Users, ArrowRight, BookOpenCheck, School, Network, PenTool, Lightbulb } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
 // Import images directly
@@ -112,6 +112,19 @@ export default function Home() {
 
           <Separator className="my-16" />
 
+          {/* Program Design and Rationale */}
+          <div className="max-w-4xl mx-auto mb-20 text-center">
+             <div className="inline-flex items-center justify-center p-3 bg-accent/10 rounded-full mb-6 text-accent">
+               <Lightbulb className="w-8 h-8" />
+             </div>
+             <h2 className="text-3xl font-serif font-bold text-primary mb-6">{programRationale.title}</h2>
+             <p className="text-xl text-muted-foreground font-light leading-relaxed">
+               {programRationale.description}
+             </p>
+          </div>
+
+          <Separator className="my-16" />
+
           {/* Program Timeline Section */}
           <div className="max-w-7xl mx-auto text-center mb-12">
              <h2 className="text-3xl font-serif font-bold text-primary mb-6">{programDetails.title}</h2>
@@ -120,25 +133,37 @@ export default function Home() {
              </p>
 
              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
-                {programDetails.timeline.map((item, i) => (
-                  <Card key={i} className="border-none shadow-sm bg-[#faf9f6] hover:shadow-md transition-shadow h-full">
-                    <CardContent className="pt-6 flex flex-col h-full">
-                       <div className="flex justify-between items-start mb-4 border-b border-border/10 pb-4">
-                         <span className="text-5xl font-serif font-bold text-accent/10 leading-none -mt-2">0{item.session}</span>
-                         <div className="text-right">
-                           <p className="text-xs font-bold text-primary uppercase tracking-wider">{item.date}</p>
-                           <p className="text-xs font-medium text-accent">{item.format}</p>
+                {programDetails.timeline.map((item, i) => {
+                  // Cycle through brand colors for the cards
+                  const colorStyles = [
+                    "border-l-4 border-l-orange-500 bg-orange-50/30",
+                    "border-l-4 border-l-blue-500 bg-blue-50/30",
+                    "border-l-4 border-l-emerald-500 bg-emerald-50/30",
+                    "border-l-4 border-l-purple-500 bg-purple-50/30"
+                  ];
+                  const numberColors = [
+                    "text-orange-200",
+                    "text-blue-200",
+                    "text-emerald-200",
+                    "text-purple-200"
+                  ];
+                  
+                  return (
+                    <Card key={i} className={`border-y-0 border-r-0 shadow-sm hover:shadow-md transition-shadow h-full ${colorStyles[i % 4]}`}>
+                      <CardContent className="pt-6 flex flex-col h-full">
+                         <div className="flex justify-between items-start mb-4 border-b border-black/5 pb-4">
+                           <span className={`text-5xl font-serif font-bold leading-none -mt-2 ${numberColors[i % 4]}`}>0{item.session}</span>
                          </div>
-                       </div>
-                       <div className="flex-1">
-                         <h3 className="text-lg font-bold font-serif text-primary mb-3 leading-tight min-h-[3rem]">{item.title}</h3>
-                         <p className="text-muted-foreground leading-relaxed text-sm">
-                           {item.description}
-                         </p>
-                       </div>
-                    </CardContent>
-                  </Card>
-                ))}
+                         <div className="flex-1">
+                           <h3 className="text-lg font-bold font-serif text-primary mb-3 leading-tight min-h-[3rem]">{item.title}</h3>
+                           <p className="text-muted-foreground leading-relaxed text-sm">
+                             {item.description}
+                           </p>
+                         </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
              </div>
           </div>
 
