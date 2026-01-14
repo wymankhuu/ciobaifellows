@@ -13,6 +13,7 @@ import img5922 from "@assets/IMG_5922_1768318177323.jpg";
 import img6404 from "@assets/IMG_6404_1768318179239.jpg";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 import playlabLogo from "@assets/Playlab_Logo_1768428941734.png";
+import mapImage from "@assets/CleanShot_2026-01-14_at_18.26.30@2x_1768433206691.png";
 
 export default function Home() {
   const [selectedFellow, setSelectedFellow] = useState<Fellow | null>(null);
@@ -142,9 +143,45 @@ export default function Home() {
       </section>
 
       <main className="container mx-auto px-4 py-16 relative z-20">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="text-3xl font-serif font-bold text-primary mb-4">Meet the Fellows</h2>
           <p className="text-muted-foreground">Explore the innovators across our diverse school networks.</p>
+        </div>
+
+        {/* CIOB & Networks Context Section */}
+        <div className="mb-20 space-y-16">
+           <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1 relative">
+                  <div className="absolute inset-0 bg-accent/5 rounded-3xl transform -rotate-2"></div>
+                  <img 
+                    src={mapImage} 
+                    alt="Map of CIOB Schools" 
+                    className="relative rounded-2xl shadow-lg border border-border/50 w-full"
+                  />
+                  <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-xs font-medium text-primary shadow-sm border border-border/40">
+                    Schools across all 5 boroughs
+                  </div>
+              </div>
+              <div className="order-1 lg:order-2 space-y-6">
+                 <h2 className="text-4xl font-serif font-bold text-primary">A Partnership for Deep Learning</h2>
+                 <p className="text-lg text-muted-foreground leading-relaxed">
+                   CIOB brings together three distinct yet aligned school networks—Consortium, International, and NYC Outward Bound—united by a commitment to performance-based assessment and student-centered learning.
+                 </p>
+                 <p className="text-lg text-muted-foreground leading-relaxed">
+                   Across these schools, educators prioritize inquiry, critical thinking, and authentic demonstrations of mastery over standardized testing.
+                 </p>
+              </div>
+           </div>
+
+           {/* Network Cards */}
+           <div className="grid md:grid-cols-3 gap-8">
+              {[contextData.consortium, contextData.international, contextData.outwardBound].map((network, i) => (
+                 <div key={i} className="bg-white p-8 rounded-xl border border-border/40 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 className="text-xl font-serif font-bold text-primary mb-4 border-b border-border/50 pb-3">{network.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{network.description}</p>
+                 </div>
+              ))}
+           </div>
         </div>
 
         <Tabs defaultValue="All" className="space-y-12">
@@ -177,20 +214,6 @@ export default function Home() {
 
             return (
               <TabsContent key={category} value={category} className="space-y-10 focus-visible:outline-none">
-                {/* Context Section (if applicable) */}
-                {context && (
-                  <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="max-w-4xl mx-auto text-center space-y-4 bg-white p-8 rounded-2xl shadow-sm border border-border/40"
-                  >
-                    <h2 className="text-3xl font-serif text-primary">{context.title}</h2>
-                    <p className="text-muted-foreground leading-relaxed text-lg">
-                      {context.description}
-                    </p>
-                  </motion.div>
-                )}
-
                 {/* Fellows Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                   {filteredFellows.map((fellow) => (
