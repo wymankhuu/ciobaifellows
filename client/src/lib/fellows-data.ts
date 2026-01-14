@@ -146,7 +146,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "12", // J. Vincente (Joe Vincent)
     name: "Joseph Vincente",
     appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
-    impact: "Reveals misconceptions that would otherwise stay hidden until the actual defense, allowing students to refine their arguments and understanding beforehand.",
+    impact: "Students now approach their defenses with the confidence of experts. Instead of being blindsided by tough questions, they use this tool to stress-test their knowledge beforehand, resulting in presentations that demonstrate true mastery rather than just memorization.",
     importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation.",
     playlabUrl: "https://www.playlab.ai/project/cmhw3oazw08sbk10ub24yysha",
     qrCode: jVincenteQr,
