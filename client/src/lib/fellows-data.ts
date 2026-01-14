@@ -8,6 +8,8 @@ import bHarneyCover from "@assets/CleanShot_2026-01-14_at_16.44.19@2x_1768427080
 import bHarneyPhoto from "@assets/CleanShot_2026-01-14_at_16.48.28@2x_1768427316706.png";
 import aDvorakQr from "@assets/qrcode-HOTBotYourHigherOrderThinkingThoughtPartner_1768427445781.png";
 import aDvorakPhoto from "@assets/CleanShot_2026-01-14_at_16.54.28@2x_1768427682769.png";
+import aKatineQr from "@assets/qrcode-V2MathThoughtPartnerforStudents_1768428109571.png";
+import aKatinePhoto from "@assets/image001_1768428190212.jpg";
 
 export interface Fellow {
   id: string;
@@ -113,6 +115,18 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
 
 // Manually specific updates based on Broad Forum Presentation data
 const presentationFellows: Partial<Fellow>[] = [
+  {
+    id: "8", // Arden Katine
+    name: "Arden Katine",
+    appDescription: "Math Thought Partner. An AI tutor designed to support students with non-routine math problems through strategic, non-leading questioning. Rather than providing answers, it acts as a coach—helping students identify stuck points, visualize problems, and journal their discoveries to build long-term problem-solving skills.",
+    quote: "We need to help students move forward through questioning, not telling.",
+    impact: "Students are taking ownership of their learning journey. By having a tool that refuses to give the answer but always offers a way forward, students are building the resilience and agency needed to tackle complex mathematical challenges without immediate teacher intervention.",
+    importance: "In math, the struggle is where the learning happens. This tool ensures that support doesn't rob students of that productive struggle, but instead scaffolds it so they can reach the solution themselves.",
+    videoUrl: "https://vocalvideo.com/embed/v1/videos/223990",
+    playlabUrl: "https://www.playlab.ai/project/cmj1h3drk3dg1mi0upotlfac0",
+    qrCode: aKatineQr,
+    photoUrl: aKatinePhoto
+  },
   {
     id: "1", // Brendan Harney
     appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review. Working to provide mastery and standards based feedback for science students across all grades.",
