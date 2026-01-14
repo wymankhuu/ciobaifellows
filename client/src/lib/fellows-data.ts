@@ -89,7 +89,7 @@ const rawFellows = [
   { id: "2", name: "Jacob Prairie", email: "jacob.prairie@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "3", name: "Christina Crisfield", email: "christina.crisfield@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "4", name: "Crystal Yeung", email: "crystal@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "5", name: "Glen Mein", email: "glen@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "5", name: "Glen Meinschein", email: "glen@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "7", name: "E. Coppola", email: "ecoppola5@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
   { id: "8", name: "A. Katine", email: "akatine@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
   { id: "10", name: "E. Castro", email: "ecastro16@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
@@ -191,7 +191,7 @@ const presentationFellows: Partial<Fellow>[] = [
   },
   {
     id: "5", // Glen Mein
-    name: "Glen Mein",
+    name: "Glen Meinschein",
     appDescription: "Debate Dojo. An AI tool that helps teachers design 5-day debate protocols for Crew advisory, generating engaging topics, pro/con arguments, and lesson plans.",
     impact: "Impacts Crew advisory by bringing structured, meaningful debate into the classroom, allowing students to practice civil discourse and critical thinking on relevant topics, strengthening the community through shared intellectual inquiry.",
     importance: "Debate and discussion are crucial for civic engagement. This tool ensures that Crew advisory is not just a homeroom, but a place for rigorous, respectful dialogue on issues that matter to students.",
