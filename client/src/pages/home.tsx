@@ -3,7 +3,7 @@ import { fellows, contextData, broadContext, programDetails, Fellow } from "@/li
 import { FellowCard } from "@/components/fellow-card";
 import { FellowModal } from "@/components/fellow-modal";
 import { motion } from "framer-motion";
-import { BrainCircuit, Sparkles, Users, ArrowRight, BookOpenCheck, School, Network } from "lucide-react";
+import { BrainCircuit, Sparkles, Users, ArrowRight, BookOpenCheck, School, Network, PenTool } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
@@ -122,7 +122,7 @@ export default function Home() {
                   <Card key={i} className="border-none shadow-md bg-[#faf9f6]">
                     <CardContent className="pt-6">
                        <div className="mb-4 p-3 bg-white rounded-full w-fit shadow-sm text-accent">
-                          {i === 0 ? <Sparkles className="w-6 h-6" /> : 
+                          {i === 0 ? <PenTool className="w-6 h-6" /> : 
                            i === 1 ? <Network className="w-6 h-6" /> : 
                            <BookOpenCheck className="w-6 h-6" />}
                        </div>
