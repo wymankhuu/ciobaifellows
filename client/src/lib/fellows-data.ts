@@ -5,6 +5,7 @@ import eCastroQr from "@assets/qrcode-CIOBHOTHelper_1768426557336.png";
 import eCastroPhoto from "@assets/CleanShot_2026-01-14_at_16.39.04@2x_1768426750429.png";
 import bHarneyQr from "@assets/qrcode-NearPeerFeedbacksciencev2_1768427021869.png";
 import bHarneyCover from "@assets/CleanShot_2026-01-14_at_16.44.19@2x_1768427080910.png";
+import bHarneyPhoto from "@assets/CleanShot_2026-01-14_at_16.48.28@2x_1768427316706.png";
 
 export interface Fellow {
   id: string;
@@ -114,11 +115,12 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "1", // Brendan Harney
     appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review. Working to provide mastery and standards based feedback for science students across all grades.",
     quote: "We need tools that guide thinking, not replace it.",
-    impact: "Helps students practice sustained attention and judgment by structuring how they critique and support their peers.",
+    impact: "Students have shifted from giving generic 'good job' comments to providing specific, actionable feedback tied directly to scientific standards. This has noticeably improved the quality of final submissions and deepened student understanding of the grading criteria before they even hand in their work.",
     importance: "Peer feedback is often superficial. This tool structures the process so students must engage deeply with criteria and their peer's work.",
     playlabUrl: "https://www.playlab.ai/project/cmiz47auf012ljr0uljchkrpo",
     qrCode: bHarneyQr,
-    coverImage: bHarneyCover
+    coverImage: bHarneyCover,
+    photoUrl: bHarneyPhoto
   },
   {
     id: "12", // J. Vincente (Joe Vincent)
