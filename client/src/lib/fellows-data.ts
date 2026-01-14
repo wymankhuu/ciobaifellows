@@ -355,19 +355,19 @@ export const broadContext = {
 
 export const programDetails = {
   title: "About the Program",
-  description: "The AI Design Fellows Program is a unique opportunity for CIOB educators and leaders to design and pilot real-world uses of AI that enhance instruction, address existing challenges, and build next-generation practices rooted in responsible innovation.",
+  description: "The AI Innovation Fellows Program is a unique opportunity for CIOB educators and leaders to design and pilot real-world uses of AI that enhance instruction, deepen student thinking, and build next-generation practices rooted in responsible innovation.",
   commitments: [
     {
       title: "Design & Innovation",
-      description: "Direct collaboration with Playlab Learning Engineers for custom AI app creation, focusing on tools that deepen student thinking."
+      description: "Direct collaboration with Playlab Learning Engineers for custom AI app creation. Fellows complete independent design work between sessions, testing tools and iterating on classroom use."
     },
     {
-      title: "Community of Practice",
-      description: "8-session learning series with targeted breakout groups and dedicated site visits for personalized coaching."
+      title: "Community & Coaching",
+      description: "8-session learning series with targeted breakout groups, plus dedicated site visits for personalized coaching. A community of educators shaping how AI is responsibly leveraged across the district."
     },
     {
-      title: "Impact & Scaling",
-      description: "Fellows document their impact and present their tools at the AI Design Fellows Showcase, contributing to a collection of proven models for district-wide scaling."
+      title: "Impact & Scale",
+      description: "Present developed AI tools at the AI Innovation Fellows Showcase. Contribute to a collection of proven AI applications and implementation models for district-wide scaling."
     }
   ],
   images: [
