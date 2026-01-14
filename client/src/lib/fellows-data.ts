@@ -101,7 +101,6 @@ const rawFellows = [
   { id: "22", name: "Alexander Dvorak", email: "advorak@schools.nyc.gov", school: "International HS at Union Square", role: "Educator", status: "Accepted", category: "International" },
   { id: "23", name: "Khalia Joseph", email: "khalia.joseph@internationalsnetwork.org", school: "Internationals Network", role: "Network Leader", status: "Accepted", category: "International" },
   { id: "24", name: "D. Wilson", email: "DWilson36@schools.nyc.gov", school: "Lyons Community School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "25", name: "S. Kern", email: "skern@northstaracademy.org", school: "North Star Academy", role: "Educator", status: "Accepted", category: "District/Other" },
   { id: "26", name: "Mike Taubman", email: "mike.taubman@northstaracademy.org", school: "North Star Academy", role: "Educator", status: "Accepted", category: "District/Other" },
   { id: "27", name: "Dolan Morgan", email: "dolan.morgan@internationalsnetwork.org", school: "NYC Outward Bound", role: "Educator", status: "Accepted", category: "Outward Bound" },
   { id: "28", name: "R. Bonilla", email: "rbonilla7@schools.nyc.gov", school: "School Without Walls", role: "Educator", status: "Accepted", category: "Consortium" },
@@ -110,11 +109,6 @@ const rawFellows = [
   { id: "31", name: "M. Ahn", email: "mahn@mihsnyc.org", school: "The Manhattan International High School", role: "Educator", status: "Accepted", category: "International" },
   { id: "32", name: "W. Abreu", email: "Wabreu5@schools.nyc.gov", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "33", name: "N. Weber", email: "nweber5@uhhsnyc.org", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "34", name: "Brett Xu", school: "Pan American International HS", role: "Educator", status: "Waitlist", category: "International" },
-  { id: "35", name: "Tess Ramsey", school: "Speyer Legacy School", role: "Educator", status: "Waitlist", category: "District/Other" },
-  { id: "36", name: "Tania Mohammed", school: "The Manhattan International High School", role: "Educator", status: "Waitlist", category: "International" },
-  { id: "37", name: "Rusmi Ramli", school: "University Heights High School", role: "Educator", status: "Waitlist", category: "Consortium" },
-  { id: "38", name: "Jessica Rodriguez", school: "University Heights High School", role: "Educator", status: "Waitlist", category: "Consortium" },
   { id: "39", name: "S. Peters", email: "speters9@schools.nyc.gov", school: "Virtual Innovators Academy", role: "Educator", status: "Accepted", category: "District/Other" },
 ] as const;
 
