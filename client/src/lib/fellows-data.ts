@@ -33,6 +33,8 @@ import rBonillaPhoto from "@assets/CleanShot_2026-01-14_at_18.07.35@2x_176843206
 import gMeinQr from "@assets/qrcode-GMDebateDojov3_1768432534898.png";
 import gMeinPhoto from "@assets/CleanShot_2026-01-14_at_18.15.12@2x_1768432518386.png";
 import gMeinCover from "@assets/CleanShot_2026-01-14_at_18.14.05@2x_1768432460524.png";
+import aSylviaQr from "@assets/qrcode-TeacherLessonDOKAnalyzer_1768432969009.png";
+import aSylviaPhoto from "@assets/CleanShot_2026-01-14_at_18.23.05@2x_1768432991865.png";
 
 export interface Fellow {
   id: string;
@@ -85,6 +87,7 @@ const schoolCategories: Record<string, Fellow['category']> = {
 
 // Data extracted and normalized from the provided text
 const rawFellows = [
+  { id: "40", name: "Al Sylvia", school: "Bronx Lab School", role: "Principal", status: "Accepted", category: "Consortium" },
   { id: "1", name: "Brendan Harney", email: "brendan.harney@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "2", name: "Jacob Prairie", email: "jacob.prairie@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "3", name: "Christina Crisfield", email: "christina.crisfield@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
@@ -116,6 +119,20 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
 
 // Manually specific updates based on Broad Forum Presentation data
 const presentationFellows: Partial<Fellow>[] = [
+  {
+    id: "40", // Al Sylvia
+    name: "Al Sylvia",
+    role: "Principal",
+    appDescription: "Teacher Lesson DOK Analyzer. An AI-powered instructional coach that helps school leaders and teachers analyze lesson plans for Depth of Knowledge (DOK). It reviews lesson documents, embedded links, and observation notes to provide a DOK level breakdown, rationale, and numerical average, comparing planned versus enacted rigor.",
+    impact: "Drives the school-wide goal of increasing instructional rigor by pushing for greater Depth of Knowledge. It promotes genuine agency for both students and teachers by providing objective, data-driven feedback that makes rigorous thinking visible and actionable.",
+    importance: "Raising expectations requires clear standards. This tool moves the conversation from abstract goals to concrete analysis, helping the entire school community align on what rigor actually looks like in practice.",
+    quote: "We need to push instruction beyond recall to true agency, ensuring rigor is a reality in every classroom.",
+    playlabUrl: "https://www.playlab.ai/project/cm0fcpuvw0mil6q60r6y0ma3i",
+    qrCode: aSylviaQr,
+    photoUrl: aSylviaPhoto,
+    coverImage: ciobLogo,
+    coverStyle: 'contain-navy'
+  },
   {
     id: "4", // Crystal Yeung
     name: "Crystal Yeung",
