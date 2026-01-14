@@ -22,6 +22,8 @@ import eVillanuevaPhoto from "@assets/CleanShot_2026-01-14_at_17.37.25@2x_176843
 import eVillanuevaCover from "@assets/image_1768430279323.png";
 import nWeberQr from "@assets/qrcode-ThinkPhysLearnPhysicsbyThinkingLikeaPhysicist_1768430551590.png";
 import nWeberPhoto from "@assets/CleanShot_2026-01-14_at_17.43.22@2x_1768430610114.png";
+import tCrisfieldQr from "@assets/qrcode-EmotionalRegulationToolbox_1768430792304.png";
+import tCrisfieldPhoto from "@assets/CleanShot_2026-01-14_at_17.46.46@2x_1768430815024.png";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 
 export interface Fellow {
@@ -244,6 +246,18 @@ const presentationFellows: Partial<Fellow>[] = [
     playlabUrl: "https://www.playlab.ai/project/cmh98r1cd5ak3fr0u7yoeoi4t",
     qrCode: nWeberQr,
     photoUrl: nWeberPhoto,
+    coverImage: ciobLogo,
+    coverStyle: 'contain-navy'
+  },
+  {
+    id: "3", // Christina Crisfield -> Tina Crisfield
+    name: "Tina Crisfield",
+    appDescription: "Emotional Regulation Toolbox. An AI assistant for educators working with students with emotional and learning disabilities. It uses evidence-based frameworks (CBT, Plutchik's Wheel, Restorative Justice) to provide concise strategies for behavioral regulation based on antecedent, behavior, and consequence analysis.",
+    impact: "This tool equips educators with immediate, non-judgmental strategies to de-escalate situations and support student self-regulation. It shifts the focus from punitive measures to restorative practices, helping students return to learning while building emotional resilience.",
+    importance: "Managing complex behaviors can be overwhelming. This tool provides real-time, evidence-based support, ensuring that interventions are consistent, inclusive, and focused on the student's long-term social-emotional growth.",
+    playlabUrl: "https://www.playlab.ai/project/cmgh0qyyw18ytiq0vf5hpyyz9",
+    qrCode: tCrisfieldQr,
+    photoUrl: tCrisfieldPhoto,
     coverImage: ciobLogo,
     coverStyle: 'contain-navy'
   }
