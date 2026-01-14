@@ -6,6 +6,8 @@ import eCastroPhoto from "@assets/CleanShot_2026-01-14_at_16.39.04@2x_1768426750
 import bHarneyQr from "@assets/qrcode-NearPeerFeedbacksciencev2_1768427021869.png";
 import bHarneyCover from "@assets/CleanShot_2026-01-14_at_16.44.19@2x_1768427080910.png";
 import bHarneyPhoto from "@assets/CleanShot_2026-01-14_at_16.48.28@2x_1768427316706.png";
+import aDvorakQr from "@assets/qrcode-HOTBotYourHigherOrderThinkingThoughtPartner_1768427445781.png";
+import aDvorakPhoto from "@assets/CleanShot_2026-01-14_at_16.54.28@2x_1768427682769.png";
 
 export interface Fellow {
   id: string;
@@ -78,7 +80,18 @@ const rawFellows = [
   { id: "19", name: "J. Rojas", email: "jrojas27@schools.nyc.gov", school: "Forsyth Satellite Academy", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "20", name: "M. Sane", email: "M.sane@ihsph.org", school: "International High School @ Prospect Heights", role: "Educator", status: "Accepted", category: "International" },
   { id: "21", name: "S. DeSilva", email: "sdesilv2@schools.nyc.gov", school: "International High School at Union Square", role: "Educator", status: "Accepted", category: "International" },
-  { id: "22", name: "A. Dvorak", email: "advorak@schools.nyc.gov", school: "International HS at Union Square", role: "Educator", status: "Accepted", category: "International" },
+  {
+    id: "22", // A. Dvorak
+    name: "Alexander Dvorak",
+    appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
+    quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
+    impact: "Teachers are using this tool to instantly find the 'low-hanging fruit' for increasing cognitive demand in their lessons. It has transformed lesson planning from a solitary struggle into a collaborative dialogue, resulting in tasks that explicitly require higher-order thinking rather than just procedural compliance.",
+    importance: "It challenges the misconception that English Language Learners can't handle complex thought. By providing concrete, leveled strategies, it ensures that rigor is a constant, not an afterthought.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder
+    playlabUrl: "https://www.playlab.ai/project/cmh9uqdyr7hnqfr0uwe241n9l",
+    qrCode: aDvorakQr,
+    photoUrl: aDvorakPhoto
+  },
   { id: "23", name: "Khalia Joseph", email: "khalia.joseph@internationalsnetwork.org", school: "Internationals Network", role: "Network Leader", status: "Accepted", category: "International" },
   { id: "24", name: "D. Wilson", email: "DWilson36@schools.nyc.gov", school: "Lyons Community School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "25", name: "S. Kern", email: "skern@northstaracademy.org", school: "North Star Academy", role: "Educator", status: "Accepted", category: "District/Other" },
