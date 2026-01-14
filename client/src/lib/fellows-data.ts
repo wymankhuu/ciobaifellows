@@ -80,22 +80,7 @@ const rawFellows = [
   { id: "19", name: "J. Rojas", email: "jrojas27@schools.nyc.gov", school: "Forsyth Satellite Academy", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "20", name: "M. Sane", email: "M.sane@ihsph.org", school: "International High School @ Prospect Heights", role: "Educator", status: "Accepted", category: "International" },
   { id: "21", name: "S. DeSilva", email: "sdesilv2@schools.nyc.gov", school: "International High School at Union Square", role: "Educator", status: "Accepted", category: "International" },
-  {
-    id: "22", // A. Dvorak
-    name: "Alexander Dvorak",
-    school: "International HS at Union Square",
-    role: "Educator",
-    status: "Accepted",
-    category: "International",
-    appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
-    quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
-    impact: "Shifts the cognitive lift from the teacher to the student, fostering genuine intellectual agency. By ensuring that rigorous thinking is accessible to all learners, it moves students from passive compliance to active ownership of their own inquiry and understanding.",
-    importance: "It challenges the misconception that English Language Learners can't handle complex thought. By providing concrete, leveled strategies, it ensures that rigor is a constant, not an afterthought.",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder
-    playlabUrl: "https://www.playlab.ai/project/cmh9uqdyr7hnqfr0uwe241n9l",
-    qrCode: aDvorakQr,
-    photoUrl: aDvorakPhoto
-  },
+  { id: "22", name: "Alexander Dvorak", email: "advorak@schools.nyc.gov", school: "International HS at Union Square", role: "Educator", status: "Accepted", category: "International" },
   { id: "23", name: "Khalia Joseph", email: "khalia.joseph@internationalsnetwork.org", school: "Internationals Network", role: "Network Leader", status: "Accepted", category: "International" },
   { id: "24", name: "D. Wilson", email: "DWilson36@schools.nyc.gov", school: "Lyons Community School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "25", name: "S. Kern", email: "skern@northstaracademy.org", school: "North Star Academy", role: "Educator", status: "Accepted", category: "District/Other" },
@@ -169,6 +154,16 @@ const presentationFellows: Partial<Fellow>[] = [
     importance: "Ensuring equity requires intentional design. This tool acts as a non-evaluative thought partner, helping teachers spot where they might be inadvertently lowering expectations and guiding them to lift the cognitive load for all students.",
     qrCode: eCastroQr,
     photoUrl: eCastroPhoto
+  },
+  {
+    id: "22", // Alexander Dvorak
+    appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
+    quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
+    impact: "Shifts the cognitive lift from the teacher to the student, fostering genuine intellectual agency. By ensuring that rigorous thinking is accessible to all learners, it moves students from passive compliance to active ownership of their own inquiry and understanding.",
+    importance: "It challenges the misconception that English Language Learners can't handle complex thought. By providing concrete, leveled strategies, it ensures that rigor is a constant, not an afterthought.",
+    playlabUrl: "https://www.playlab.ai/project/cmh9uqdyr7hnqfr0uwe241n9l",
+    qrCode: aDvorakQr,
+    photoUrl: aDvorakPhoto
   }
 ];
 
