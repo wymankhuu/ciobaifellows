@@ -42,7 +42,7 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
           <div className="bg-primary/5 p-8 flex flex-col gap-6 border-r border-border/50 overflow-y-auto">
             <div className="flex flex-col items-center text-center gap-4">
               <Avatar className="h-32 w-32 border-4 border-background shadow-xl">
-                 <AvatarImage src={`https://api.dicebear.com/7.x/initials/svg?seed=${fellow.name}&backgroundColor=e5e7eb&textColor=374151`} />
+                 <AvatarImage src={fellow.photoUrl || `https://api.dicebear.com/7.x/initials/svg?seed=${fellow.name}&backgroundColor=e5e7eb&textColor=374151`} />
                 <AvatarFallback className="text-2xl font-serif bg-white text-primary">
                   {initials}
                 </AvatarFallback>

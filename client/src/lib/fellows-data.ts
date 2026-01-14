@@ -1,4 +1,5 @@
 import cCostelloQr from "@assets/qrcode-PBATEssayProjectBuilder_1768425410059.png";
+import cCostelloPhoto from "@assets/CleanShot_2026-01-14_at_16.24.15@2x_1768425864489.png";
 
 export interface Fellow {
   id: string;
@@ -16,6 +17,7 @@ export interface Fellow {
   playlabUrl?: string; // Placeholder for app link
   importance?: string; // Why this is important
   qrCode?: string;
+  photoUrl?: string;
 }
 
 const schoolCategories: Record<string, Fellow['category']> = {
@@ -117,13 +119,15 @@ const presentationFellows: Partial<Fellow>[] = [
   },
   {
     id: "14", // C. Costello
+    name: "Christopher A. Costello",
     appDescription: "ELA & Debate Research Writing Coach. An AI thought partner that provides follow-up questions to research submissions, encouraging students to develop and improve persuasive writing and personal reflections. It targets support based on subject rubrics (ELA, Math, Science, Social Studies) without providing direct answers.",
     quote: "We need to encourage, develop, and improve persuasive writing through critical thinking, not just error correction.",
     impact: "Provides specific, positive reinforcement on grammar and punctuation while pushing for authentic student responses. Supports students from initial drafts to visual presentations and data analysis.",
     videoUrl: "https://vocalvideo.com/embed/v1/videos/223934",
     playlabUrl: "https://www.playlab.ai/project/cmkbambgo2s5bg90u11q2e34r",
     importance: "This tool shifts the focus from 'getting it right' to 'thinking it through,' requiring full sentences and deep reflection while ensuring students maintain ownership of their authentic voice.",
-    qrCode: cCostelloQr
+    qrCode: cCostelloQr,
+    photoUrl: cCostelloPhoto
   }
 ];
 

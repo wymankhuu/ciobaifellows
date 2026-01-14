@@ -27,7 +27,7 @@ export function FellowCard({ fellow, onClick }: FellowCardProps) {
       >
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
           <Avatar className="h-16 w-16 border-2 border-accent/20 transition-transform group-hover:scale-105">
-            <AvatarImage src={`https://api.dicebear.com/7.x/initials/svg?seed=${fellow.name}&backgroundColor=e5e7eb&textColor=374151`} />
+            <AvatarImage src={fellow.photoUrl || `https://api.dicebear.com/7.x/initials/svg?seed=${fellow.name}&backgroundColor=e5e7eb&textColor=374151`} />
             <AvatarFallback className="bg-secondary text-secondary-foreground font-serif">
               {initials}
             </AvatarFallback>
