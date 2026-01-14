@@ -13,6 +13,7 @@ import img6404 from "@assets/IMG_6404_1768318179239.jpg";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 import playlabLogo from "@assets/Playlab_Logo_1768428941734.png";
 import mapImage from "@assets/CleanShot_2026-01-14_at_18.26.30@2x_1768433206691.png";
+import libraryImage from "@assets/CleanShot_2026-01-14_at_18.38.01@2x_1768433891949.png";
 
 export default function Home() {
   const [selectedFellow, setSelectedFellow] = useState<Fellow | null>(null);
@@ -99,10 +100,11 @@ export default function Home() {
                         alt="Classroom activity" 
                         className="rounded-xl shadow-lg w-1/2 h-48 object-cover"
                       />
-                      <div className="w-1/2 bg-primary p-6 rounded-xl flex flex-col justify-center items-center text-center text-primary-foreground">
-                         <span className="text-4xl font-serif font-bold mb-2">30+</span>
-                         <span className="text-sm uppercase tracking-wider opacity-80">Fellows Leading Innovation</span>
-                      </div>
+                      <img 
+                        src={libraryImage} 
+                        alt="Library session" 
+                        className="rounded-xl shadow-lg w-1/2 h-48 object-cover"
+                      />
                    </div>
                 </div>
              </div>
