@@ -11,6 +11,7 @@ import { Separator } from "@/components/ui/separator";
 // Import images directly
 import img5922 from "@assets/IMG_5922_1768318177323.jpg";
 import img6404 from "@assets/IMG_6404_1768318179239.jpg";
+import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 
 export default function Home() {
   const [selectedFellow, setSelectedFellow] = useState<Fellow | null>(null);
@@ -34,6 +35,14 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            <div className="flex items-center justify-center mb-8">
+              <img 
+                src={ciobLogo} 
+                alt="CIOB Logo" 
+                className="h-32 md:h-40 w-auto drop-shadow-xl"
+              />
+            </div>
+
             <div className="flex items-center justify-center gap-2 mb-4">
                <span className="px-3 py-1 rounded-full bg-accent/20 text-accent-foreground text-sm font-medium border border-accent/20">
                  Cohorts 2025-2026
