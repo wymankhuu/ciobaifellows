@@ -17,6 +17,9 @@ import eCoppolaQr from "@assets/qrcode-CreateaLearningPlan_1768429416319.png";
 import eCoppolaPhoto from "@assets/CleanShot_2026-01-14_at_17.23.49@2x_1768429435262.png";
 import sPetersQr from "@assets/qrcode-EchoSpace_(1)_1768429866393.png";
 import sPetersPhoto from "@assets/CleanShot_2026-01-14_at_17.32.21@2x_1768429948742.png";
+import eVillanuevaQr from "@assets/qrcode-MAKERSINACTION_1768430239291.png";
+import eVillanuevaPhoto from "@assets/CleanShot_2026-01-14_at_17.37.25@2x_1768430253453.png";
+import eVillanuevaCover from "@assets/image_1768430279323.png";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 
 export interface Fellow {
@@ -217,6 +220,15 @@ const presentationFellows: Partial<Fellow>[] = [
     playlabUrl: "https://www.playlab.ai/project/cmgr2swd93bwpis0vddordmx7",
     qrCode: sPetersQr,
     photoUrl: sPetersPhoto
+  },
+  {
+    id: "17", // Eloi (Eloi Villenueva)
+    name: "Eloi Villenueva",
+    playlabUrl: "https://www.playlab.ai/project/cmh0jdf9m01rpil0uf0uxsx5n",
+    qrCode: eVillanuevaQr,
+    photoUrl: eVillanuevaPhoto,
+    coverImage: eVillanuevaCover,
+    coverStyle: 'contain-navy'
   }
 ];
 
