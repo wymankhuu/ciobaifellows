@@ -112,26 +112,30 @@ export default function Home() {
 
           <Separator className="my-16" />
 
-          {/* Program Details Section */}
-          <div className="max-w-5xl mx-auto text-center mb-12">
+          {/* Program Timeline Section */}
+          <div className="max-w-7xl mx-auto text-center mb-12">
              <h2 className="text-3xl font-serif font-bold text-primary mb-6">{programDetails.title}</h2>
              <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto mb-12">
                {programDetails.description}
              </p>
 
-             <div className="grid md:grid-cols-3 gap-8 text-left">
-                {programDetails.commitments.map((item, i) => (
-                  <Card key={i} className="border-none shadow-md bg-[#faf9f6]">
-                    <CardContent className="pt-6">
-                       <div className="mb-4 p-3 bg-white rounded-full w-fit shadow-sm text-accent">
-                          {i === 0 ? <PenTool className="w-6 h-6" /> : 
-                           i === 1 ? <Network className="w-6 h-6" /> : 
-                           <BookOpenCheck className="w-6 h-6" />}
+             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                {programDetails.timeline.map((item, i) => (
+                  <Card key={i} className="border-none shadow-sm bg-[#faf9f6] hover:shadow-md transition-shadow h-full">
+                    <CardContent className="pt-6 flex flex-col h-full">
+                       <div className="flex justify-between items-start mb-4 border-b border-border/10 pb-4">
+                         <span className="text-5xl font-serif font-bold text-accent/10 leading-none -mt-2">0{item.session}</span>
+                         <div className="text-right">
+                           <p className="text-xs font-bold text-primary uppercase tracking-wider">{item.date}</p>
+                           <p className="text-xs font-medium text-accent">{item.format}</p>
+                         </div>
                        </div>
-                       <h3 className="text-lg font-bold font-serif text-primary mb-3">{item.title}</h3>
-                       <p className="text-muted-foreground leading-relaxed text-sm">
-                         {item.description}
-                       </p>
+                       <div className="flex-1">
+                         <h3 className="text-lg font-bold font-serif text-primary mb-3 leading-tight min-h-[3rem]">{item.title}</h3>
+                         <p className="text-muted-foreground leading-relaxed text-sm">
+                           {item.description}
+                         </p>
+                       </div>
                     </CardContent>
                   </Card>
                 ))}

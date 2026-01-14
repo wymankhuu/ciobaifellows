@@ -354,20 +354,64 @@ export const broadContext = {
 };
 
 export const programDetails = {
-  title: "About the Program",
-  description: "The AI Innovation Fellows Program is a unique opportunity for CIOB educators and leaders to design and pilot real-world uses of AI that enhance instruction, deepen student thinking, and build next-generation practices rooted in responsible innovation.",
-  commitments: [
+  title: "Program Timeline",
+  description: "An intensive journey from concept to scalable impact, designed for educators ready to push boundaries.",
+  timeline: [
     {
-      title: "Design & Innovation",
-      description: "Direct collaboration with Playlab Learning Engineers for custom AI app creation. Fellows complete independent design work between sessions, testing tools and iterating on classroom use."
+      session: "1",
+      title: "Foundation & Vision",
+      date: "Week of Sept 29",
+      format: "In-Person",
+      description: "Establish shared vision, responsible AI frameworks, and form cohort teams. Fellows define their initial app concept proposals."
     },
     {
-      title: "Community & Coaching",
-      description: "8-session learning series with targeted breakout groups, plus dedicated site visits for personalized coaching. A community of educators shaping how AI is responsibly leveraged across the district."
+      session: "2",
+      title: "Co-Design & Prototyping",
+      date: "Week of Oct 13",
+      format: "Virtual",
+      description: "Deep dive into Playlab design methodology and rapid prototyping. Fellows build initial prototypes and establish testing protocols."
     },
     {
-      title: "Impact & Scale",
-      description: "Present developed AI tools at the AI Innovation Fellows Showcase. Contribute to a collection of proven AI applications and implementation models for district-wide scaling."
+      session: "3",
+      title: "Designing with End in Mind",
+      date: "Week of Oct 27",
+      format: "Virtual",
+      description: "Focus on student-facing apps, accessibility, and cognitive load. Integrate student voice and refine tools based on feedback."
+    },
+    {
+      session: "4",
+      title: "Implementation & Scale",
+      date: "Week of Nov 10",
+      format: "In-Person",
+      description: "Prepare for classroom deployment and educator training. Fellows design implementation guides and troubleshoot challenges."
+    },
+    {
+      session: "5",
+      title: "Assessment & Iteration",
+      date: "Week of Nov 24",
+      format: "Virtual",
+      description: "Analyze impact data and evidence-based iteration. Fellows share learnings and create data-driven improvement plans."
+    },
+    {
+      session: "6",
+      title: "Advanced Development",
+      date: "Week of Dec 8",
+      format: "Virtual",
+      description: "Direct collaboration with Playlab Engineers on advanced features and technical optimization. MVPs ready to share."
+    },
+    {
+      session: "7",
+      title: "Showcase Preparation",
+      date: "Week of Dec 15",
+      format: "In-Person",
+      description: "Finalize demonstrations and case studies. Focus on demo creation, documentation, and presentation skills."
+    },
+    {
+      session: "8",
+      title: "Public Showcase",
+      date: "January",
+      format: "In-Person + Public",
+      description: "Public presentations of portfolios and implementation strategies. Demonstrate tools and share lessons with the community."
     }
   ],
   images: [
