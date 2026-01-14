@@ -25,6 +25,7 @@ import nWeberPhoto from "@assets/CleanShot_2026-01-14_at_17.43.22@2x_17684306101
 import tCrisfieldQr from "@assets/qrcode-EmotionalRegulationToolbox_1768430792304.png";
 import tCrisfieldPhoto from "@assets/CleanShot_2026-01-14_at_17.46.46@2x_1768430815024.png";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
+import videoPlaceholder from "@assets/image_1768431182032.png";
 
 export interface Fellow {
   id: string;
@@ -106,9 +107,10 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
   appDescription: "Developed an AI-powered feedback assistant that helps students refine their performance assessments through iterative, personalized guidance.",
   impact: "Reduced grading time by 40% while increasing student engagement in the revision process. Students reported feeling more confident in their final submissions.",
   quote: "This fellowship has completely reshaped how I view the role of technology in the classroom.",
-  videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder
   playlabUrl: "https://www.playlab.ai", // Placeholder
-  importance: "This tool bridges the gap between assessment and learning, ensuring that students receive immediate, actionable feedback that deepens their understanding rather than just correcting their mistakes."
+  importance: "This tool bridges the gap between assessment and learning, ensuring that students receive immediate, actionable feedback that deepens their understanding rather than just correcting their mistakes.",
+  coverImage: videoPlaceholder,
+  coverStyle: 'contain-navy'
 }));
 
 // Manually specific updates based on Broad Forum Presentation data
