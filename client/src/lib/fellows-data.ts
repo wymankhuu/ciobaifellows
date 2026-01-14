@@ -224,6 +224,9 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "17", // Eloi (Eloi Villenueva)
     name: "Eloi Villenueva",
+    appDescription: "Makers in Action. An AI facilitator that helps students plan and execute rigorous maker projects. It guides students through the design thinking process, ensuring their creations are aligned with learning goals while preserving their creative autonomy.",
+    impact: "This tool shifts the focus from efficiency to alignment and depth. Instead of just speeding up the process, it encourages students to design projects that are more tightly aligned with learning goals while pushing them to ask more profound, inquiry-driven questions that drive their making.",
+    importance: "Maker projects can sometimes prioritize 'doing' over 'learning'. This tool ensures that the making is grounded in deep inquiry and clear educational objectives.",
     playlabUrl: "https://www.playlab.ai/project/cmh0jdf9m01rpil0uf0uxsx5n",
     qrCode: eVillanuevaQr,
     photoUrl: eVillanuevaPhoto,
