@@ -234,6 +234,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "28", // Rosa Bonilla
     name: "Rosa Bonilla",
+    quote: "Language proficiency should never be a barrier to higher-order thinking or student inquiry.",
     appDescription: "Differentiation with Proficiency Levels in Spanish. An AI assistant for Spanish language education that curates and adapts texts for diverse learners. It provides versions of the same text at multiple proficiency levels (beginner to advanced/heritage), ensuring all students can access age-appropriate, intellectually engaging content regardless of their language background.",
     impact: "Ensures equitable access to rigorous content at School Without Walls. By instantly generating scaffolded versions of authentic texts—along with vocabulary glossaries for beginners and analytical prompts for heritage speakers—it allows the entire class to engage with the same essential ideas and higher-order thinking questions.",
     importance: "True inclusion means everyone accesses the same complex ideas, not watered-down content. This tool makes differentiation manageable, ensuring that language proficiency isn't a barrier to intellectual engagement.",
