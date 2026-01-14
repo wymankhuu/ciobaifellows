@@ -2,6 +2,8 @@ import cCostelloQr from "@assets/qrcode-PBATEssayProjectBuilder_1768425410059.pn
 import cCostelloPhoto from "@assets/CleanShot_2026-01-14_at_16.24.15@2x_1768425864489.png";
 import eCastroQr from "@assets/qrcode-CIOBHOTHelper_1768426557336.png";
 
+import eCastroPhoto from "@assets/CleanShot_2026-01-14_at_16.39.04@2x_1768426750429.png";
+
 export interface Fellow {
   id: string;
   name: string;
@@ -132,13 +134,16 @@ const presentationFellows: Partial<Fellow>[] = [
   },
   {
     id: "10", // E. Castro
+    name: "Ed Castro",
+    role: "Family Leadership Coordinator",
     appDescription: "CIOB Higher-Order Thinking (HOT) Helper. An instructional coaching assistant that helps educators analyze and improve the rigor and equity of their classroom artifacts. It provides feedback grounded in cognitive demand analysis, supporting teachers in creating rigorous, inclusive learning experiences.",
     quote: "We need tools that support teachers in designing for rigor and equity, not just compliance.",
-    impact: "Empowers educators to rapidly audit their own materials for higher-order thinking opportunities and provides concrete, actionable suggestions for increasing cognitive demand while ensuring access for all learners.",
+    impact: "This tool has provided educators with a safe, non-evaluative space to audit their own materials. It allows them to instantly see where they can increase rigor and receive concrete, actionable coaching that they can implement immediately.",
     videoUrl: "https://vocalvideo.com/embed/v1/videos/224043",
     playlabUrl: "https://www.playlab.ai/project/cmhnlyvq400s6lx0uqxv9m9n2",
     importance: "Ensuring equity requires intentional design. This tool acts as a non-evaluative thought partner, helping teachers spot where they might be inadvertently lowering expectations and guiding them to lift the cognitive load for all students.",
-    qrCode: eCastroQr
+    qrCode: eCastroQr,
+    photoUrl: eCastroPhoto
   }
 ];
 
