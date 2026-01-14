@@ -1,3 +1,5 @@
+import cCostelloQr from "@assets/qrcode-PBATEssayProjectBuilder_1768425410059.png";
+
 export interface Fellow {
   id: string;
   name: string;
@@ -13,6 +15,7 @@ export interface Fellow {
   quote?: string;
   playlabUrl?: string; // Placeholder for app link
   importance?: string; // Why this is important
+  qrCode?: string;
 }
 
 const schoolCategories: Record<string, Fellow['category']> = {
@@ -119,7 +122,8 @@ const presentationFellows: Partial<Fellow>[] = [
     impact: "Provides specific, positive reinforcement on grammar and punctuation while pushing for authentic student responses. Supports students from initial drafts to visual presentations and data analysis.",
     videoUrl: "https://vocalvideo.com/embed/v1/videos/223934",
     playlabUrl: "https://www.playlab.ai/project/cmkbambgo2s5bg90u11q2e34r",
-    importance: "This tool shifts the focus from 'getting it right' to 'thinking it through,' requiring full sentences and deep reflection while ensuring students maintain ownership of their authentic voice."
+    importance: "This tool shifts the focus from 'getting it right' to 'thinking it through,' requiring full sentences and deep reflection while ensuring students maintain ownership of their authentic voice.",
+    qrCode: cCostelloQr
   }
 ];
 

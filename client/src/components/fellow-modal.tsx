@@ -76,8 +76,12 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
             {/* App Link Section */}
             <div className="space-y-4">
               <div className="bg-white p-4 rounded-xl border border-border shadow-sm flex flex-col items-center gap-3">
-                 <div className="w-32 h-32 bg-primary/5 rounded-lg flex items-center justify-center">
-                    <QrCode className="w-20 h-20 text-primary/20" />
+                 <div className="w-32 h-32 bg-primary/5 rounded-lg flex items-center justify-center overflow-hidden">
+                    {fellow.qrCode ? (
+                      <img src={fellow.qrCode} alt="App QR Code" className="w-full h-full object-cover" />
+                    ) : (
+                      <QrCode className="w-20 h-20 text-primary/20" />
+                    )}
                  </div>
                  <Button 
                    className="w-full bg-accent hover:bg-accent/90 text-white font-medium group" 
