@@ -13,6 +13,9 @@ import aKatinePhoto from "@assets/image001_1768428190212.jpg";
 import jVincenteQr from "@assets/qrcode-CIOBSciencePBATPresentationCoach_1768428612972.png";
 import jVincentePhoto from "@assets/CleanShot_2026-01-14_at_17.10.51@2x_1768428662566.png";
 import jVincenteCover from "@assets/DSCF4069_1768428691241.JPG";
+import eCoppolaQr from "@assets/qrcode-CreateaLearningPlan_1768429416319.png";
+import eCoppolaPhoto from "@assets/CleanShot_2026-01-14_at_17.23.49@2x_1768429435262.png";
+import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 
 export interface Fellow {
   id: string;
@@ -178,6 +181,18 @@ const presentationFellows: Partial<Fellow>[] = [
     importance: "Ensuring equity requires intentional design. This tool acts as a non-evaluative thought partner, helping teachers spot where they might be inadvertently lowering expectations and guiding them to lift the cognitive load for all students.",
     qrCode: eCastroQr,
     photoUrl: eCastroPhoto
+  },
+  {
+    id: "7", // E. Coppola
+    name: "Eileen Coppola",
+    appDescription: "Create a Learning Plan. An AI guide that partners with students to co-construct personalized learning plans. It helps students define goals, assess their current understanding against New York State Standards, set actionable steps, and reflect on their progress.",
+    quote: "We need to shift planning from something done to students to something done with them.",
+    impact: "This tool promotes genuine student agency by facilitating co-planning between students and teachers. It ensures that learning goals are both rigorous and personally meaningful, directly aligning with CIOB's principles of student-centered learning and shared ownership of the educational journey.",
+    importance: "True agency comes from understanding where you are and where you're going. This tool gives students the structure to navigate that journey themselves.",
+    playlabUrl: "https://www.playlab.ai/project/cmgr3cz0h0020jz0uq57rb45u",
+    qrCode: eCoppolaQr,
+    photoUrl: eCoppolaPhoto,
+    coverImage: ciobLogo
   },
   {
     id: "22", // Alexander Dvorak
