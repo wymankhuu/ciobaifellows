@@ -143,60 +143,64 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12 relative z-20">
         
-        {/* CIOB & Networks Context Section - Compact */}
-        <div className="mb-16 space-y-8">
-           <div className="grid lg:grid-cols-[1fr_2fr] gap-8 items-center bg-white p-6 rounded-2xl shadow-sm border border-border/40">
-              <div className="relative flex justify-center">
-                  <div className="absolute inset-0 bg-accent/5 rounded-3xl transform -rotate-2 max-w-xs mx-auto"></div>
+        {/* CIOB & Networks Context Section - Expanded */}
+        <div className="mb-20">
+           <div className="text-center mb-12">
+              <h2 className="text-4xl font-serif font-bold text-primary mb-4">About the CIOB</h2>
+              <a 
+                href="https://sites.google.com/schools.nyc.gov/ciob-citywide/home?authuser=0" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-medium transition-colors"
+              >
+                Visit CIOB Website <ArrowRight className="w-4 h-4" />
+              </a>
+           </div>
+
+           <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+              <div className="relative flex justify-center order-2 lg:order-1">
+                  <div className="absolute inset-0 bg-accent/5 rounded-3xl transform -rotate-2 max-w-md mx-auto"></div>
                   <img 
                     src={mapImage} 
                     alt="Map of CIOB Schools" 
-                    className="relative rounded-xl shadow-md border border-border/50 w-full max-w-xs mx-auto"
+                    className="relative rounded-2xl shadow-lg border border-border/50 w-full max-w-md mx-auto"
                   />
               </div>
-              <div className="space-y-4">
-                 <div className="flex justify-between items-start">
-                    <h2 className="text-2xl font-serif font-bold text-primary">A Partnership for Deep Learning</h2>
-                    <a 
-                      href="https://sites.google.com/schools.nyc.gov/ciob-citywide/home?authuser=0" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-sm font-medium text-accent hover:text-accent/80 flex items-center gap-1 transition-colors"
-                    >
-                      Visit CIOB Website <ArrowRight className="w-4 h-4" />
-                    </a>
-                 </div>
-                 <p className="text-muted-foreground leading-relaxed text-sm">
-                   CIOB brings together three distinct yet aligned school networks—Consortium, International, and NYC Outward Bound—united by a commitment to performance-based assessment and student-centered learning. Across these schools, educators prioritize inquiry, critical thinking, and authentic demonstrations of mastery over standardized testing.
+              <div className="space-y-6 order-1 lg:order-2">
+                 <p className="text-lg text-muted-foreground leading-relaxed">
+                   CIOB brings together three distinct yet aligned school networks—Consortium, International, and NYC Outward Bound—united by a commitment to performance-based assessment and student-centered learning.
                  </p>
-                 
-                 {/* Network Cards - Compact Row */}
-                 <div className="grid md:grid-cols-3 gap-4 pt-2">
-                    {/* Consortium */}
-                    <div className="bg-orange-50/50 p-4 rounded-lg border border-orange-200/60">
-                      <h3 className="text-sm font-bold text-orange-900 mb-1">{contextData.consortium.title}</h3>
-                      <p className="text-xs text-orange-900/80 leading-snug line-clamp-3 hover:line-clamp-none transition-all">{contextData.consortium.description}</p>
-                    </div>
+                 <p className="text-lg text-muted-foreground leading-relaxed">
+                   Across these schools, educators prioritize inquiry, critical thinking, and authentic demonstrations of mastery over standardized testing.
+                 </p>
+              </div>
+           </div>
 
-                    {/* International */}
-                    <div className="bg-blue-50/50 p-4 rounded-lg border border-blue-200/60">
-                      <h3 className="text-sm font-bold text-blue-900 mb-1">{contextData.international.title}</h3>
-                      <p className="text-xs text-blue-900/80 leading-snug line-clamp-3 hover:line-clamp-none transition-all">{contextData.international.description}</p>
-                    </div>
+           {/* Network Cards */}
+           <div className="grid md:grid-cols-3 gap-6">
+              {/* Consortium */}
+              <div className="bg-orange-50/50 p-6 rounded-xl border border-orange-200/60 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-serif font-bold text-orange-900 mb-3">{contextData.consortium.title}</h3>
+                <p className="text-sm text-orange-900/80 leading-relaxed">{contextData.consortium.description}</p>
+              </div>
 
-                    {/* Outward Bound */}
-                    <div className="bg-emerald-50/50 p-4 rounded-lg border border-emerald-200/60">
-                      <h3 className="text-sm font-bold text-emerald-900 mb-1">{contextData.outwardBound.title}</h3>
-                      <p className="text-xs text-emerald-900/80 leading-snug line-clamp-3 hover:line-clamp-none transition-all">{contextData.outwardBound.description}</p>
-                    </div>
-                 </div>
+              {/* International */}
+              <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-200/60 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-serif font-bold text-blue-900 mb-3">{contextData.international.title}</h3>
+                <p className="text-sm text-blue-900/80 leading-relaxed">{contextData.international.description}</p>
+              </div>
+
+              {/* Outward Bound */}
+              <div className="bg-emerald-50/50 p-6 rounded-xl border border-emerald-200/60 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-serif font-bold text-emerald-900 mb-3">{contextData.outwardBound.title}</h3>
+                <p className="text-sm text-emerald-900/80 leading-relaxed">{contextData.outwardBound.description}</p>
               </div>
            </div>
         </div>
 
         <div className="text-center mb-12">
           <h2 className="text-4xl font-serif font-bold text-primary mb-3">Some of the Work So Far</h2>
-          <p className="text-muted-foreground text-lg mb-3">Meet the Fellows & Explore their Prototypes</p>
+          <p className="text-muted-foreground text-lg mb-3">Meet the Fellows & See their Impact So Far</p>
           <p className="text-xs font-bold text-accent uppercase tracking-widest border-t border-b border-accent/20 py-2 inline-block px-4">
              More to come throughout the fellowship
           </p>
