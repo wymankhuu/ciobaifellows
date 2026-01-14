@@ -35,6 +35,7 @@ export interface Fellow {
   qrCode?: string;
   photoUrl?: string;
   coverImage?: string;
+  coverStyle?: 'default' | 'contain-navy';
 }
 
 const schoolCategories: Record<string, Fellow['category']> = {
@@ -192,7 +193,8 @@ const presentationFellows: Partial<Fellow>[] = [
     playlabUrl: "https://www.playlab.ai/project/cmgr3cz0h0020jz0uq57rb45u",
     qrCode: eCoppolaQr,
     photoUrl: eCoppolaPhoto,
-    coverImage: ciobLogo
+    coverImage: ciobLogo,
+    coverStyle: 'contain-navy'
   },
   {
     id: "22", // Alexander Dvorak

@@ -110,12 +110,12 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
           <ScrollArea className="h-full max-h-[90vh]">
             <div className="p-8 space-y-8">
               {/* Video/Image Section */}
-              <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-black/5 group relative">
+              <div className={`aspect-video w-full rounded-xl overflow-hidden shadow-lg group relative ${fellow.coverStyle === 'contain-navy' ? 'bg-[#002044] flex items-center justify-center' : 'bg-black/5'}`}>
                 {fellow.coverImage ? (
                   <img 
                     src={fellow.coverImage} 
                     alt="Project Cover" 
-                    className="w-full h-full object-cover"
+                    className={fellow.coverStyle === 'contain-navy' ? "w-1/2 h-1/2 object-contain opacity-90" : "w-full h-full object-cover"}
                   />
                 ) : (
                   <iframe
