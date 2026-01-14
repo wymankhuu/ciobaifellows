@@ -89,7 +89,7 @@ const rawFellows = [
     category: "International",
     appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
     quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
-    impact: "Teachers are using this tool to instantly find the 'low-hanging fruit' for increasing cognitive demand in their lessons. It has transformed lesson planning from a solitary struggle into a collaborative dialogue, resulting in tasks that explicitly require higher-order thinking rather than just procedural compliance.",
+    impact: "Shifts the cognitive lift from the teacher to the student, fostering genuine intellectual agency. By ensuring that rigorous thinking is accessible to all learners, it moves students from passive compliance to active ownership of their own inquiry and understanding.",
     importance: "It challenges the misconception that English Language Learners can't handle complex thought. By providing concrete, leveled strategies, it ensures that rigor is a constant, not an afterthought.",
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder
     playlabUrl: "https://www.playlab.ai/project/cmh9uqdyr7hnqfr0uwe241n9l",
