@@ -26,6 +26,8 @@ import tCrisfieldQr from "@assets/qrcode-EmotionalRegulationToolbox_176843079230
 import tCrisfieldPhoto from "@assets/CleanShot_2026-01-14_at_17.46.46@2x_1768430815024.png";
 import ciobLogo from "@assets/ciob_logo-removebg-preview_1768420327507.png";
 import videoPlaceholder from "@assets/image_1768431182032.png";
+import cYeungQr from "@assets/qrcode-CrystalsFeedbackAIforHorrorStories_1768431542616.png";
+import cYeungPhoto from "@assets/CleanShot_2026-01-14_at_17.59.12@2x_1768431558449.png";
 
 export interface Fellow {
   id: string;
@@ -81,7 +83,7 @@ const rawFellows = [
   { id: "1", name: "Brendan Harney", email: "brendan.harney@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "2", name: "Jacob Prairie", email: "jacob.prairie@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "3", name: "Christina Crisfield", email: "christina.crisfield@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "4", name: "Crystal", email: "crystal@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "4", name: "Crystal Yeung", email: "crystal@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "5", name: "Glen", email: "glen@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "7", name: "E. Coppola", email: "ecoppola5@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
   { id: "8", name: "A. Katine", email: "akatine@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
@@ -115,6 +117,18 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
 
 // Manually specific updates based on Broad Forum Presentation data
 const presentationFellows: Partial<Fellow>[] = [
+  {
+    id: "4", // Crystal Yeung
+    name: "Crystal Yeung",
+    appDescription: "Feedback AI for Horror Stories. An AI writing coach that helps students refine their horror narratives by focusing on 'show, don't tell' strategies. It analyzes drafts for sensory details, suspense, and mood, offering specific questions and prompts in a structured feedback table without doing the writing for them.",
+    impact: "Helps students at Brooklyn Collaborative Studies enhance their writing skills by providing feedback that deepens understanding of literary devices. It pushes them to effectively use repetition, alliteration, and dialogue to create atmosphere, ensuring they master the genre's conventions while maintaining ownership of their story.",
+    importance: "Writing feedback can often be prescriptive. This tool models the revision process by asking 'tell me more' or 'what do you mean?', guiding students to discover their own solutions and develop a stronger, more descriptive writing voice.",
+    playlabUrl: "https://www.playlab.ai/project/cmi5bzjok6190jx0ucagdss9z",
+    qrCode: cYeungQr,
+    photoUrl: cYeungPhoto,
+    coverImage: ciobLogo,
+    coverStyle: 'contain-navy'
+  },
   {
     id: "8", // Arden Katine
     name: "Arden Katine",
