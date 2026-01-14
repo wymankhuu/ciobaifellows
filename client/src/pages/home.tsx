@@ -2,7 +2,6 @@ import { useState } from "react";
 import { fellows, contextData, broadContext, programDetails, Fellow } from "@/lib/fellows-data";
 import { FellowCard } from "@/components/fellow-card";
 import { FellowModal } from "@/components/fellow-modal";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import { BrainCircuit, Sparkles, Users, ArrowRight, BookOpenCheck, School, Network } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -23,8 +22,6 @@ export default function Home() {
     setSelectedFellow(fellow);
     setModalOpen(true);
   };
-
-  const categories = ["All", "Consortium", "International", "Outward Bound", "District/Other"];
 
   return (
     <div className="min-h-screen bg-[#faf9f6]">
@@ -151,16 +148,13 @@ export default function Home() {
         {/* CIOB & Networks Context Section */}
         <div className="mb-20 space-y-16">
            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1 relative">
-                  <div className="absolute inset-0 bg-accent/5 rounded-3xl transform -rotate-2"></div>
+              <div className="order-2 lg:order-1 relative flex justify-center">
+                  <div className="absolute inset-0 bg-accent/5 rounded-3xl transform -rotate-2 max-w-md mx-auto"></div>
                   <img 
                     src={mapImage} 
                     alt="Map of CIOB Schools" 
-                    className="relative rounded-2xl shadow-lg border border-border/50 w-full"
+                    className="relative rounded-2xl shadow-lg border border-border/50 w-full max-w-md mx-auto"
                   />
-                  <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-lg text-xs font-medium text-primary shadow-sm border border-border/40">
-                    Schools across all 5 boroughs
-                  </div>
               </div>
               <div className="order-1 lg:order-2 space-y-6">
                  <h2 className="text-4xl font-serif font-bold text-primary">A Partnership for Deep Learning</h2>
@@ -175,65 +169,36 @@ export default function Home() {
 
            {/* Network Cards */}
            <div className="grid md:grid-cols-3 gap-8">
-              {[contextData.consortium, contextData.international, contextData.outwardBound].map((network, i) => (
-                 <div key={i} className="bg-white p-8 rounded-xl border border-border/40 shadow-sm hover:shadow-md transition-shadow">
-                    <h3 className="text-xl font-serif font-bold text-primary mb-4 border-b border-border/50 pb-3">{network.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{network.description}</p>
-                 </div>
-              ))}
+              {/* Consortium - Orange Theme */}
+              <div className="bg-orange-50/50 p-8 rounded-xl border border-orange-200/60 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-serif font-bold text-orange-900 mb-4 border-b border-orange-200 pb-3">{contextData.consortium.title}</h3>
+                <p className="text-orange-900/80 leading-relaxed">{contextData.consortium.description}</p>
+              </div>
+
+              {/* International - Blue Theme */}
+              <div className="bg-blue-50/50 p-8 rounded-xl border border-blue-200/60 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-serif font-bold text-blue-900 mb-4 border-b border-blue-200 pb-3">{contextData.international.title}</h3>
+                <p className="text-blue-900/80 leading-relaxed">{contextData.international.description}</p>
+              </div>
+
+              {/* Outward Bound - Green Theme */}
+              <div className="bg-emerald-50/50 p-8 rounded-xl border border-emerald-200/60 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-serif font-bold text-emerald-900 mb-4 border-b border-emerald-200 pb-3">{contextData.outwardBound.title}</h3>
+                <p className="text-emerald-900/80 leading-relaxed">{contextData.outwardBound.description}</p>
+              </div>
            </div>
         </div>
 
-        <Tabs defaultValue="All" className="space-y-12">
-          <div className="flex justify-center sticky top-4 z-30">
-            <TabsList className="bg-white/90 backdrop-blur-md shadow-lg p-1 h-auto flex-wrap justify-center border border-primary/10 rounded-full">
-              {categories.map((category) => (
-                <TabsTrigger
-                  key={category}
-                  value={category}
-                  className="rounded-full px-6 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground font-serif transition-all"
-                >
-                  {category === "District/Other" ? "District Partners" : category}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-          </div>
-
-          {categories.map((category) => {
-            const filteredFellows = category === "All" 
-              ? fellows 
-              : fellows.filter(f => f.category === category);
-            
-            // Map category to context data key
-            const contextKey = category === "Consortium" ? "consortium" 
-              : category === "International" ? "international"
-              : category === "Outward Bound" ? "outwardBound"
-              : null;
-              
-            const context = contextKey ? contextData[contextKey] : null;
-
-            return (
-              <TabsContent key={category} value={category} className="space-y-10 focus-visible:outline-none">
-                {/* Fellows Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                  {filteredFellows.map((fellow) => (
-                    <FellowCard 
-                      key={fellow.id} 
-                      fellow={fellow} 
-                      onClick={handleFellowClick} 
-                    />
-                  ))}
-                </div>
-
-                {filteredFellows.length === 0 && (
-                   <div className="text-center py-20 text-muted-foreground font-serif italic">
-                     No fellows found in this category.
-                   </div>
-                )}
-              </TabsContent>
-            );
-          })}
-        </Tabs>
+        {/* Fellows Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {fellows.map((fellow) => (
+            <FellowCard 
+              key={fellow.id} 
+              fellow={fellow} 
+              onClick={handleFellowClick} 
+            />
+          ))}
+        </div>
       </main>
 
       {/* Footer */}

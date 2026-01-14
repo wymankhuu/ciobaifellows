@@ -138,6 +138,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "4", // Crystal Yeung
     name: "Crystal Yeung",
     appDescription: "Feedback AI for Horror Stories. An AI writing coach that helps students refine their horror narratives by focusing on 'show, don't tell' strategies. It analyzes drafts for sensory details, suspense, and mood, offering specific questions and prompts in a structured feedback table without doing the writing for them.",
+    quote: "Great writing comes from revision. We need feedback that nudges students to 'show, not tell' without stealing the joy of discovery from them.",
     impact: "Helps students at Brooklyn Collaborative Studies enhance their writing skills by providing feedback that deepens understanding of literary devices. It pushes them to effectively use repetition, alliteration, and dialogue to create atmosphere, ensuring they master the genre's conventions while maintaining ownership of their story.",
     importance: "Writing feedback can often be prescriptive. This tool models the revision process by asking 'tell me more' or 'what do you mean?', guiding students to discover their own solutions and develop a stronger, more descriptive writing voice.",
     playlabUrl: "https://www.playlab.ai/project/cmi5bzjok6190jx0ucagdss9z",
@@ -162,7 +163,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "1", // Brendan Harney
     appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review. Working to provide mastery and standards based feedback for science students across all grades.",
-    quote: "We need tools that guide thinking, not replace it.",
+    quote: "Meaningful feedback requires understanding the standard. This tool ensures students aren't just correcting each other, but coaching each other toward mastery.",
     impact: "Students have shifted from giving generic 'good job' comments to providing specific, actionable feedback tied directly to scientific standards. This has noticeably improved the quality of final submissions and deepened student understanding of the grading criteria before they even hand in their work.",
     importance: "Peer feedback is often superficial. This tool structures the process so students must engage deeply with criteria and their peer's work.",
     playlabUrl: "https://www.playlab.ai/project/cmiz47auf012ljr0uljchkrpo",
@@ -176,6 +177,7 @@ const presentationFellows: Partial<Fellow>[] = [
     name: "Joseph Vincente",
     role: "Vice Principal",
     appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
+    quote: "Confidence comes from practice. By simulating the defense, we transform the panel from a test of nerves into a demonstration of expertise.",
     impact: "Students are moving towards approaching their defenses with the confidence of experts. By stress-testing their knowledge beforehand, they are shifting from rote memorization to demonstrating true mastery during their presentations.",
     importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation.",
     playlabUrl: "https://www.playlab.ai/project/cmhw3oazw08sbk10ub24yysha",
@@ -247,6 +249,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "39", // S. Peters (Sparkle Peters)
     name: "Sparkle Peters",
     appDescription: "EchoSpace. An expert AI facilitator designed to guide student groups through effective virtual collaboration. It provides light structure and targeted prompts to help teams organize themselves, clarify goals, ensuring participation is even and thinking is co-constructed rather than just divided.",
+    quote: "Collaboration is a skill, not a setting. We need to give student teams the structure to manage their own voices so they can focus on the thinking.",
     impact: "This tool fundamentally shifts learning from passive group participation to active, shared ownership. By scaffolding the 'how' of collaboration—resolving conflicts, clarifying roles, and ensuring equitable voice—it allows students to focus their cognitive energy on co-constructing knowledge and reasoning together, rather than getting stuck on logistics.",
     importance: "Group work often fails due to unstructured dynamics. This tool scaffolds the process, ensuring that collaboration supports higher-order thinking and that every student's voice is valued.",
     playlabUrl: "https://www.playlab.ai/project/cmgr2swd93bwpis0vddordmx7",
@@ -282,6 +285,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "33", // N. Weber
     name: "Nathan Weber",
     appDescription: "ThinkPhys: Learn Physics by Thinking Like a Physicist. An AI tutor for AP Physics 1 and C: E&M that guides student reasoning, reveals misconceptions, and leads them step-by-step toward conceptual understanding without simply providing answers.",
+    quote: "Solving the equation is the easy part. The real work is understanding the physical reality behind it—and that requires conversation, not just calculation.",
     impact: "This tool pushes students beyond procedural fluency to a higher Depth of Knowledge (DOK). It requires them to articulate their reasoning and connect mathematical solutions to physical concepts, ensuring they truly understand the 'why' behind the physics, not just the 'how' of the calculation.",
     importance: "Physics often becomes an exercise in plugging numbers into formulas. This tool insists on conceptual grounding, training students to think like physicists who first understand the system before applying the math.",
     playlabUrl: "https://www.playlab.ai/project/cmh98r1cd5ak3fr0u7yoeoi4t",
