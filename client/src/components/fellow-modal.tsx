@@ -36,10 +36,10 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl max-h-[90vh] p-0 gap-0 border-none shadow-2xl bg-[#fafafa] overflow-y-auto md:overflow-hidden block">
-        <div className="flex flex-col md:grid md:grid-cols-[300px_1fr] md:h-full">
+      <DialogContent className="max-w-4xl h-[90vh] md:h-[85vh] p-0 gap-0 border-none shadow-2xl bg-[#fafafa] flex flex-col overflow-hidden">
+        <div className="flex flex-col md:grid md:grid-cols-[300px_1fr] h-full overflow-hidden">
           {/* Sidebar */}
-          <div className="bg-primary/5 p-8 flex flex-col gap-6 border-b md:border-b-0 md:border-r border-border/50 md:overflow-y-auto shrink-0">
+          <div className="bg-primary/5 p-8 flex flex-col gap-6 border-b md:border-b-0 md:border-r border-border/50 overflow-y-auto shrink-0">
             <div className="flex flex-col items-center text-center gap-4">
               <Avatar className="h-32 w-32 border-4 border-background shadow-xl">
                  <AvatarImage src={fellow.photoUrl || `https://api.dicebear.com/7.x/initials/svg?seed=${fellow.name}&backgroundColor=e5e7eb&textColor=374151`} className="object-cover" />
@@ -107,7 +107,7 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
           </div>
 
           {/* Main Content */}
-          <div className="p-8 space-y-8 md:overflow-y-auto md:h-full">
+          <div className="p-8 space-y-8 overflow-y-auto h-full">
               {/* Video/Image Section */}
               <div className={`w-full rounded-xl overflow-hidden shadow-lg group relative ${fellow.coverStyle === 'contain-navy' && !fellow.videoUrl ? 'bg-[#002044] flex items-center justify-center aspect-video' : 'bg-black/5'}`}>
                 {fellow.videoUrl ? (
