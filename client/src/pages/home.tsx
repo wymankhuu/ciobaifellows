@@ -136,7 +136,7 @@ export default function Home() {
           {/* Program Design and Rationale & Timeline Combined */}
           <div id="program" className="max-w-7xl mx-auto mb-16 scroll-mt-24">
              <div className="text-center max-w-4xl mx-auto mb-10">
-               <h2 className="text-3xl font-serif font-bold text-primary mb-4">{programRationale.title}</h2>
+               <h2 className="text-4xl font-serif font-bold text-primary mb-4">{programRationale.title}</h2>
                <p className="text-lg text-muted-foreground font-light leading-relaxed mb-6">
                  {programRationale.description}
                </p>
