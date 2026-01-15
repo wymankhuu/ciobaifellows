@@ -3,7 +3,7 @@ import { fellows, contextData, broadContext, programDetails, programRationale, F
 import { FellowCard } from "@/components/fellow-card";
 import { FellowModal } from "@/components/fellow-modal";
 import { motion } from "framer-motion";
-import { BrainCircuit, Sparkles, Users, ArrowRight, BookOpenCheck, School, Network, PenTool, Lightbulb } from "lucide-react";
+import { BrainCircuit, Sparkles, Users, ArrowRight, BookOpenCheck, School, Network, PenTool, Lightbulb, Globe, Compass } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
@@ -167,6 +167,17 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12 relative z-20">
         
+        {/* Fellows Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-20">
+          {fellows.map((fellow) => (
+            <FellowCard 
+              key={fellow.id} 
+              fellow={fellow} 
+              onClick={handleFellowClick} 
+            />
+          ))}
+        </div>
+
         {/* CIOB & Networks Context Section - Expanded */}
         <div className="mb-20">
            <div className="text-center mb-12">
@@ -204,41 +215,31 @@ export default function Home() {
            <div className="grid md:grid-cols-3 gap-6">
               {/* Consortium */}
               <div className="bg-orange-50/50 p-6 rounded-xl border border-orange-200/60 hover:shadow-md transition-shadow">
+                <div className="inline-flex items-center justify-center p-3 bg-orange-100/50 rounded-full mb-4 text-orange-600">
+                  <BookOpenCheck className="w-6 h-6" />
+                </div>
                 <h3 className="text-lg font-serif font-bold text-orange-900 mb-3">{contextData.consortium.title}</h3>
                 <p className="text-sm text-orange-900/80 leading-relaxed">{contextData.consortium.description}</p>
               </div>
 
               {/* International */}
               <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-200/60 hover:shadow-md transition-shadow">
+                <div className="inline-flex items-center justify-center p-3 bg-blue-100/50 rounded-full mb-4 text-blue-600">
+                  <Globe className="w-6 h-6" />
+                </div>
                 <h3 className="text-lg font-serif font-bold text-blue-900 mb-3">{contextData.international.title}</h3>
                 <p className="text-sm text-blue-900/80 leading-relaxed">{contextData.international.description}</p>
               </div>
 
               {/* Outward Bound */}
               <div className="bg-emerald-50/50 p-6 rounded-xl border border-emerald-200/60 hover:shadow-md transition-shadow">
+                <div className="inline-flex items-center justify-center p-3 bg-emerald-100/50 rounded-full mb-4 text-emerald-600">
+                  <Compass className="w-6 h-6" />
+                </div>
                 <h3 className="text-lg font-serif font-bold text-emerald-900 mb-3">{contextData.outwardBound.title}</h3>
                 <p className="text-sm text-emerald-900/80 leading-relaxed">{contextData.outwardBound.description}</p>
               </div>
            </div>
-        </div>
-
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-serif font-bold text-primary mb-3">Some of the Work So Far</h2>
-          <p className="text-muted-foreground text-lg mb-3">Meet the Fellows & See their Impact So Far</p>
-          <p className="text-xs font-bold text-accent uppercase tracking-widest border-t border-b border-accent/20 py-2 inline-block px-4">
-             More to come throughout the fellowship
-          </p>
-        </div>
-
-        {/* Fellows Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {fellows.map((fellow) => (
-            <FellowCard 
-              key={fellow.id} 
-              fellow={fellow} 
-              onClick={handleFellowClick} 
-            />
-          ))}
         </div>
       </main>
 
