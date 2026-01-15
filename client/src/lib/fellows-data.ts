@@ -173,6 +173,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "8", // Arden Katine
     name: "Arden Katine",
     role: "District Math Instructional Coach",
+    bio: "Former math teacher, now coaches math teachers towards more inquiry-based math with a focus on discourse.",
     appDescription: "Math Thought Partner. An AI tutor designed to support students with non-routine math problems through strategic, non-leading questioning. Rather than providing answers, it acts as a coach—helping students identify stuck points, visualize problems, and journal their discoveries to build long-term problem-solving skills.",
     summary: "Supports students with non-routine math problems through strategic, non-leading questioning.",
     quote: "We need to help students move forward through questioning, not telling.",
@@ -215,6 +216,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "14", // C. Costello
     name: "Christopher A. Costello",
+    bio: "18-year Educator; 10 years as Special Education and Social Studies teacher and 8 years as the Assistant Principal at El Puente Academy for Peace and Justice.",
     appDescription: "ELA & Debate Research Writing Coach. An AI thought partner that provides follow-up questions to research submissions, encouraging students to develop and improve persuasive writing and personal reflections. It targets support based on subject rubrics (ELA, Math, Science, Social Studies) without providing direct answers.",
     summary: "Provides follow-up questions to research submissions, encouraging students to develop and improve persuasive writing and personal reflections.",
     quote: "We need to encourage, develop, and improve persuasive writing through critical thinking, not just error correction.",
@@ -270,7 +272,7 @@ const presentationFellows: Partial<Fellow>[] = [
   },
   {
     id: "22", // Alexander Dvorak
-    bio: "Biology and AI elective teacher at International High School at Union Square with 30 years of experience. Excited to give students tools to build creativity.",
+    bio: "Biology and AI elective teacher of immigrant students in Manhattan. Has taught in Africa and NYC public schools for 30 years. Enjoys singing in a chorus and growing native plants in a community garden.",
     appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
     summary: "Helps teachers audit and elevate the cognitive rigor of their lessons.",
     quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
@@ -295,7 +297,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "17", // Eloi (Eloi Villenueva)
     name: "Eloi Villenueva",
-    bio: "Math educator at Flushing International High School who mixes math, STEM, and creativity to help students see themselves as problem-solvers.",
+    bio: "Math educator who loves turning numbers into stories and projects. Mixes math, STEM, and creativity so every student sees themselves as a problem-solver. Believes learning should spark curiosity, build confidence, and be fun.",
     appDescription: "Makers in Action. An AI facilitator that helps students plan and execute rigorous maker projects. It guides students through the design thinking process, ensuring their creations are aligned with learning goals while preserving their creative autonomy.",
     summary: "Helps students plan and execute rigorous maker projects, guiding them through the design thinking process.",
     impact: "This tool shifts the focus from efficiency to alignment and depth. Instead of just speeding up the process, it encourages students to design projects that are more tightly aligned with learning goals while pushing them to ask more profound, inquiry-driven questions that drive their making.",
@@ -323,7 +325,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "33", // N. Weber
     name: "Nathan Weber",
-    bio: "Teaches AP Physics and Robotics at University Heights High School. Coaches robotics teams and is excited about exploring how technology can deepen conceptual understanding.",
+    bio: "Teaches AP Physics and Robotics, coaching 3 FTC Robotics teams. Loves playing with his son, hanging out with family, reading, and travelling to Greece in the summer.",
     appDescription: "ThinkPhys: Learn Physics by Thinking Like a Physicist. An AI tutor for AP Physics 1 and C: E&M that guides student reasoning, reveals misconceptions, and leads them step-by-step toward conceptual understanding without simply providing answers.",
     summary: "Guides student reasoning in AP Physics, reveals misconceptions, and leads them step-by-step toward conceptual understanding.",
     quote: "Solving the equation is the easy part. The real work is understanding the physical reality behind it—and that requires conversation, not just calculation.",
@@ -338,7 +340,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "3", // Christina Crisfield -> Tina Crisfield
     name: "Tina Crisfield",
-    bio: "Special education teacher at Bronx Lab School with 16 years of experience. Passionate about reading, writing, and adjusting biases towards AI in education.",
+    bio: "Special education teacher at Bronx Lab School in her 16th year of education. Has taught English, History, Science and Math in special class, ICT and Gen Ed settings. English is her favorite subject because she personally enjoys reading and writing.",
     appDescription: "Emotional Regulation Toolbox. An AI assistant for educators working with students with emotional and learning disabilities. It uses evidence-based frameworks (CBT, Plutchik's Wheel, Restorative Justice) to provide concise strategies for behavioral regulation based on antecedent, behavior, and consequence analysis.",
     summary: "Provides educators working with students with emotional and learning disabilities concise strategies for behavioral regulation.",
     impact: "This tool equips educators with immediate, non-judgmental strategies to de-escalate situations and support student self-regulation. It shifts the focus from punitive measures to restorative practices, helping students return to learning while building emotional resilience.",
