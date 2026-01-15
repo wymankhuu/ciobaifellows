@@ -113,13 +113,10 @@ export default function Home() {
           <Separator className="my-16" />
 
           {/* Program Design and Rationale & Timeline Combined */}
-          <div className="max-w-7xl mx-auto mb-20">
-             <div className="text-center max-w-4xl mx-auto mb-16">
-               <div className="inline-flex items-center justify-center p-3 bg-accent/10 rounded-full mb-6 text-accent">
-                 <Lightbulb className="w-8 h-8" />
-               </div>
-               <h2 className="text-3xl font-serif font-bold text-primary mb-6">{programRationale.title}</h2>
-               <p className="text-xl text-muted-foreground font-light leading-relaxed mb-8">
+          <div className="max-w-7xl mx-auto mb-16">
+             <div className="text-center max-w-4xl mx-auto mb-10">
+               <h2 className="text-3xl font-serif font-bold text-primary mb-4">{programRationale.title}</h2>
+               <p className="text-lg text-muted-foreground font-light leading-relaxed mb-6">
                  {programRationale.description}
                </p>
              </div>
