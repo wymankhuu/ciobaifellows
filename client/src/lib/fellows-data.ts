@@ -127,6 +127,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "40", // Al Sylvia
     name: "Al Sylvia",
     role: "Principal",
+    bio: "Principal at Bronx Lab School focusing on driving student agency and teacher agency through engaging, high Depth of Knowledge teaching and learning.",
     appDescription: "Teacher Lesson DOK Analyzer. An AI-powered instructional coach that helps school leaders and teachers analyze lesson plans for Depth of Knowledge (DOK). It reviews lesson documents, embedded links, and observation notes to provide a DOK level breakdown, rationale, and numerical average, comparing planned versus enacted rigor.",
     summary: "Helps school leaders and teachers analyze lesson plans for Depth of Knowledge (DOK).",
     impact: "Drives the school-wide goal of increasing instructional rigor by pushing for greater Depth of Knowledge. It promotes genuine agency for both students and teachers by providing objective, data-driven feedback that makes rigorous thinking visible and actionable.",
@@ -142,6 +143,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "2", // JD
     name: "JD",
     role: "Instructional Coach",
+    bio: "Instructional Coach supporting inquiry-based STEM instruction, helping teachers reflect on and refine their classroom strategies.",
     appDescription: "Thinking Through Learning. A thinking partner for teachers to help them think through their lessons before teaching them, reflect on lessons after they are taught, and to brainstorm strategies based on classroom experiences.",
     summary: "Acts as a thinking partner for teachers to help them think through, reflect on, and brainstorm lesson strategies.",
     quote: "Teaching is challenging work. We need tools that support reflection without judgment, helping us understand the deeper purpose of our lessons.",
@@ -155,6 +157,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "4", // Crystal Yeung
     name: "Crystal Yeung",
+    bio: "Middle school SPED teacher at Brooklyn Collaborative Studies and a writer/poet. Focuses on co-teaching ELA and supporting MLL students.",
     appDescription: "Feedback AI for Horror Stories. An AI writing coach that helps students refine their horror narratives by focusing on 'show, don't tell' strategies. It analyzes drafts for sensory details, suspense, and mood, offering specific questions and prompts in a structured feedback table without doing the writing for them.",
     summary: "Helps students refine their horror narratives by focusing on 'show, don't tell' strategies.",
     quote: "Great writing comes from revision. We need feedback that nudges students to 'show, not tell' without stealing the joy of discovery from them.",
@@ -198,6 +201,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "12", // J. Vincente (Joe Vincent)
     name: "Joseph Vincente",
     role: "Vice Principal",
+    bio: "Assistant Principal of STEM at East Side Community School. A former Chemistry teacher passionate about leveraging AI for learning and equity.",
     appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
     summary: "Helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
     quote: "Confidence comes from practice. By simulating the defense, we transform the panel from a test of nerves into a demonstration of expertise.",
@@ -238,6 +242,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "5", // Glen Mein
     name: "Glen Meinschein",
+    bio: "Middle school Special Education teacher and AI lead at Brooklyn Collaborative Studies. Loves creating engaging, project-based learning experiences.",
     appDescription: "Debate Dojo. An AI tool that helps teachers design 5-day debate protocols for Crew advisory, generating engaging topics, pro/con arguments, and lesson plans.",
     summary: "Helps teachers design 5-day debate protocols for Crew advisory, generating engaging topics, pro/con arguments, and lesson plans.",
     impact: "Impacts Crew advisory by bringing structured, meaningful debate into the classroom, allowing students to practice civil discourse and critical thinking on relevant topics, strengthening the community through shared intellectual inquiry.",
@@ -251,6 +256,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "7", // E. Coppola
     name: "Eileen Coppola",
+    bio: "CIOB district staff member and former principal/professor who works alongside school leaders to build plans for continuous improvement.",
     appDescription: "Create a Learning Plan. An AI guide that partners with students to co-construct personalized learning plans. It helps students define goals, assess their current understanding against New York State Standards, set actionable steps, and reflect on their progress.",
     summary: "Partners with students to co-construct personalized learning plans, helping them define goals and reflect on their progress.",
     quote: "We need to shift planning from something done to students to something done with them.",
@@ -264,6 +270,7 @@ const presentationFellows: Partial<Fellow>[] = [
   },
   {
     id: "22", // Alexander Dvorak
+    bio: "Biology and AI elective teacher at International High School at Union Square with 30 years of experience. Excited to give students tools to build creativity.",
     appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
     summary: "Helps teachers audit and elevate the cognitive rigor of their lessons.",
     quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
@@ -288,6 +295,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "17", // Eloi (Eloi Villenueva)
     name: "Eloi Villenueva",
+    bio: "Math educator at Flushing International High School who mixes math, STEM, and creativity to help students see themselves as problem-solvers.",
     appDescription: "Makers in Action. An AI facilitator that helps students plan and execute rigorous maker projects. It guides students through the design thinking process, ensuring their creations are aligned with learning goals while preserving their creative autonomy.",
     summary: "Helps students plan and execute rigorous maker projects, guiding them through the design thinking process.",
     impact: "This tool shifts the focus from efficiency to alignment and depth. Instead of just speeding up the process, it encourages students to design projects that are more tightly aligned with learning goals while pushing them to ask more profound, inquiry-driven questions that drive their making.",
@@ -315,6 +323,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "33", // N. Weber
     name: "Nathan Weber",
+    bio: "Teaches AP Physics and Robotics at University Heights High School. Coaches robotics teams and is excited about exploring how technology can deepen conceptual understanding.",
     appDescription: "ThinkPhys: Learn Physics by Thinking Like a Physicist. An AI tutor for AP Physics 1 and C: E&M that guides student reasoning, reveals misconceptions, and leads them step-by-step toward conceptual understanding without simply providing answers.",
     summary: "Guides student reasoning in AP Physics, reveals misconceptions, and leads them step-by-step toward conceptual understanding.",
     quote: "Solving the equation is the easy part. The real work is understanding the physical reality behind it—and that requires conversation, not just calculation.",
@@ -329,6 +338,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "3", // Christina Crisfield -> Tina Crisfield
     name: "Tina Crisfield",
+    bio: "Special education teacher at Bronx Lab School with 16 years of experience. Passionate about reading, writing, and adjusting biases towards AI in education.",
     appDescription: "Emotional Regulation Toolbox. An AI assistant for educators working with students with emotional and learning disabilities. It uses evidence-based frameworks (CBT, Plutchik's Wheel, Restorative Justice) to provide concise strategies for behavioral regulation based on antecedent, behavior, and consequence analysis.",
     summary: "Provides educators working with students with emotional and learning disabilities concise strategies for behavioral regulation.",
     impact: "This tool equips educators with immediate, non-judgmental strategies to de-escalate situations and support student self-regulation. It shifts the focus from punitive measures to restorative practices, helping students return to learning while building emotional resilience.",
