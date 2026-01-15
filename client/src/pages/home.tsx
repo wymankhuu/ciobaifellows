@@ -29,7 +29,6 @@ export default function Home() {
     <div className="min-h-screen bg-[#faf9f6]">
       {/* Hero Section */}
       <header className="relative bg-primary text-primary-foreground py-24 overflow-hidden">
-        <style>{`html { scroll-behavior: smooth; }`}</style>
         
         {/* Navigation Links - Top Right */}
         <nav className="absolute top-0 right-0 p-6 z-20 hidden md:flex items-center gap-6 text-primary-foreground/90 font-medium tracking-wide text-sm uppercase">
