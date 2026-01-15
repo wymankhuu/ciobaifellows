@@ -28,6 +28,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#faf9f6]">
       {/* Hero Section */}
       <header className="relative bg-primary text-primary-foreground py-24 overflow-hidden">
+        <style>{`html { scroll-behavior: smooth; }`}</style>
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div
@@ -54,6 +55,26 @@ export default function Home() {
             <p className="text-xl md:text-2xl font-light text-primary-foreground/80 max-w-2xl mx-auto font-serif italic mb-8">
               "Does this use of AI deepen thinking, or does it flatten it?"
             </p>
+
+            {/* Navigation Links */}
+            <nav className="flex flex-wrap justify-center gap-6 md:gap-10 mt-12 text-primary-foreground/80 font-medium tracking-wide text-sm md:text-base uppercase">
+              <a href="#context" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Context
+              </a>
+              <a href="#program" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                Program Design
+              </a>
+              <a href="#fellows" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                The Fellows
+              </a>
+              <a href="#about" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                About CIOB
+              </a>
+            </nav>
           </motion.div>
         </div>
       </header>
@@ -62,7 +83,7 @@ export default function Home() {
       <section className="bg-white py-20 border-b border-border/40">
         <div className="container mx-auto px-4">
           
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div id="context" className="grid lg:grid-cols-2 gap-16 items-center mb-20 scroll-mt-24">
              <div className="space-y-8">
                 <h2 className="text-4xl font-serif font-bold text-primary">{broadContext.title}</h2>
                 <div className="space-y-6 text-lg text-muted-foreground font-light leading-relaxed">
@@ -113,7 +134,7 @@ export default function Home() {
           <Separator className="my-16" />
 
           {/* Program Design and Rationale & Timeline Combined */}
-          <div className="max-w-7xl mx-auto mb-16">
+          <div id="program" className="max-w-7xl mx-auto mb-16 scroll-mt-24">
              <div className="text-center max-w-4xl mx-auto mb-10">
                <h2 className="text-3xl font-serif font-bold text-primary mb-4">{programRationale.title}</h2>
                <p className="text-lg text-muted-foreground font-light leading-relaxed mb-6">
@@ -161,7 +182,7 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12 relative z-20">
         
-        <div className="text-center mb-12">
+        <div id="fellows" className="text-center mb-12 scroll-mt-24">
           <h2 className="text-4xl font-serif font-bold text-primary mb-4">Some of the Work so Far</h2>
           <p className="text-muted-foreground text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
             Explore what the Design Fellows are building for their unique school contexts. Read about their work, test their apps, and see how they are designing for deeper thinking and greater agency.
@@ -183,7 +204,7 @@ export default function Home() {
         </div>
 
         {/* CIOB & Networks Context Section - Expanded */}
-        <div className="mb-20">
+        <div id="about" className="mb-20 scroll-mt-24">
            <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-primary mb-4">About the CIOB</h2>
               <a 
