@@ -112,25 +112,20 @@ export default function Home() {
 
           <Separator className="my-16" />
 
-          {/* Program Design and Rationale */}
-          <div className="max-w-4xl mx-auto mb-20 text-center">
-             <div className="inline-flex items-center justify-center p-3 bg-accent/10 rounded-full mb-6 text-accent">
-               <Lightbulb className="w-8 h-8" />
+          {/* Program Design and Rationale & Timeline Combined */}
+          <div className="max-w-7xl mx-auto mb-20">
+             <div className="text-center max-w-4xl mx-auto mb-16">
+               <div className="inline-flex items-center justify-center p-3 bg-accent/10 rounded-full mb-6 text-accent">
+                 <Lightbulb className="w-8 h-8" />
+               </div>
+               <h2 className="text-3xl font-serif font-bold text-primary mb-6">{programRationale.title}</h2>
+               <p className="text-xl text-muted-foreground font-light leading-relaxed mb-8">
+                 {programRationale.description}
+               </p>
+               <p className="text-lg text-primary/80 font-medium italic border-l-4 border-accent pl-6 text-left max-w-2xl mx-auto">
+                 {programDetails.description}
+               </p>
              </div>
-             <h2 className="text-3xl font-serif font-bold text-primary mb-6">{programRationale.title}</h2>
-             <p className="text-xl text-muted-foreground font-light leading-relaxed">
-               {programRationale.description}
-             </p>
-          </div>
-
-          <Separator className="my-16" />
-
-          {/* Program Timeline Section */}
-          <div className="max-w-7xl mx-auto text-center mb-12">
-             <h2 className="text-3xl font-serif font-bold text-primary mb-6">{programDetails.title}</h2>
-             <p className="text-xl text-muted-foreground font-light max-w-3xl mx-auto mb-12">
-               {programDetails.description}
-             </p>
 
              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
                 {programDetails.timeline.map((item, i) => {
