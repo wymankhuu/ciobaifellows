@@ -142,29 +142,22 @@ export function FellowModal({ fellow, open, onOpenChange }: FellowModalProps) {
                     {fellow.appDescription}
                   </p>
 
-                  {/* Why this is important */}
-                  <div className="bg-blue-50/50 p-5 rounded-lg border-l-4 border-accent">
-                     <div className="flex items-center gap-2 mb-2 text-accent-foreground/80">
-                        <AlertCircle className="w-4 h-4" />
-                        <h4 className="font-bold text-sm uppercase tracking-wide">Why This Matters</h4>
-                     </div>
-                     <p className="text-base text-foreground/80 leading-relaxed italic">
-                        {fellow.importance}
-                     </p>
-                  </div>
+
+                  {/* Why this is important removed */}
+
                 </section>
 
                 <div className="grid md:grid-cols-2 gap-8">
-                  {/* Journey */}
+                  {/* Rationale */}
                   <section className="bg-white p-6 rounded-xl border border-border/40 shadow-sm">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="p-2 rounded-full bg-secondary text-secondary-foreground">
-                        <BookOpen className="w-4 h-4" />
+                      <div className="p-2 rounded-full bg-blue-100 text-blue-700">
+                        <AlertCircle className="w-4 h-4" />
                       </div>
-                      <h4 className="font-serif font-bold text-lg">The Journey</h4>
+                      <h4 className="font-serif font-bold text-lg">Rationale</h4>
                     </div>
                     <p className="text-sm leading-relaxed text-muted-foreground">
-                      {fellow.bio}
+                      {fellow.importance}
                     </p>
                   </section>
 
