@@ -135,15 +135,15 @@ export default function Home() {
           <Separator className="my-16" />
 
           {/* Program Design and Rationale & Timeline Combined */}
-          <div id="program" className="max-w-7xl mx-auto mb-16 scroll-mt-24">
-             <div className="text-center max-w-4xl mx-auto mb-10">
-               <h2 className="text-4xl font-serif font-bold text-primary mb-4">{programRationale.title}</h2>
-               <p className="text-lg text-muted-foreground font-light leading-relaxed mb-6">
+          <div id="program" className="max-w-7xl mx-auto mb-12 scroll-mt-24">
+             <div className="text-center max-w-4xl mx-auto mb-8">
+               <h2 className="text-4xl font-serif font-bold text-primary mb-3">{programRationale.title}</h2>
+               <p className="text-base text-muted-foreground font-light leading-relaxed mb-6">
                  {programRationale.description}
                </p>
              </div>
 
-             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
                 {programDetails.timeline.map((item, i) => {
                   // Cycle through brand colors for the cards
                   const colorStyles = [
@@ -161,13 +161,13 @@ export default function Home() {
                   
                   return (
                     <Card key={i} className={`border-y-0 border-r-0 shadow-sm hover:shadow-md transition-shadow h-full ${colorStyles[i % 4]}`}>
-                      <CardContent className="pt-6 flex flex-col h-full">
-                         <div className="flex justify-between items-start mb-4 border-b border-black/5 pb-4">
-                           <span className={`text-5xl font-serif font-bold leading-none -mt-2 ${numberColors[i % 4]}`}>0{item.session}</span>
+                      <CardContent className="p-5 flex flex-col h-full">
+                         <div className="flex justify-between items-start mb-3 border-b border-black/5 pb-3">
+                           <span className={`text-4xl font-serif font-bold leading-none -mt-1 ${numberColors[i % 4]}`}>0{item.session}</span>
                          </div>
                          <div className="flex-1">
-                           <h3 className="text-lg font-bold font-serif text-primary mb-3 leading-tight min-h-[3rem]">{item.title}</h3>
-                           <p className="text-muted-foreground leading-relaxed text-sm">
+                           <h3 className="text-base font-bold font-serif text-primary mb-2 leading-tight min-h-[2.5rem]">{item.title}</h3>
+                           <p className="text-muted-foreground leading-snug text-xs">
                              {item.description}
                            </p>
                          </div>
