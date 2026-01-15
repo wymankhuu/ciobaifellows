@@ -48,6 +48,7 @@ export interface Fellow {
   category: "Consortium" | "International" | "Outward Bound" | "District/Other";
   bio?: string;
   appDescription?: string;
+  summary?: string;
   impact?: string;
   videoUrl?: string; // Placeholder for embedded video
   quote?: string;
@@ -111,6 +112,7 @@ export const fellows: Fellow[] = rawFellows.map(fellow => ({
   ...fellow,
   bio: `An experienced ${fellow.role.toLowerCase()} at ${fellow.school}, dedicated to transforming student learning experiences through technology and innovation.`,
   appDescription: "Developed an AI-powered feedback assistant that helps students refine their performance assessments through iterative, personalized guidance.",
+  summary: "Developed an AI-powered feedback assistant that helps students refine their performance assessments through iterative, personalized guidance.",
   impact: "Reduced grading time by 40% while increasing student engagement in the revision process. Students reported feeling more confident in their final submissions.",
   quote: "This fellowship has completely reshaped how I view the role of technology in the classroom.",
   playlabUrl: "https://www.playlab.ai", // Placeholder
@@ -126,6 +128,7 @@ const presentationFellows: Partial<Fellow>[] = [
     name: "Al Sylvia",
     role: "Principal",
     appDescription: "Teacher Lesson DOK Analyzer. An AI-powered instructional coach that helps school leaders and teachers analyze lesson plans for Depth of Knowledge (DOK). It reviews lesson documents, embedded links, and observation notes to provide a DOK level breakdown, rationale, and numerical average, comparing planned versus enacted rigor.",
+    summary: "An AI-powered instructional coach that helps school leaders and teachers analyze lesson plans for Depth of Knowledge (DOK).",
     impact: "Drives the school-wide goal of increasing instructional rigor by pushing for greater Depth of Knowledge. It promotes genuine agency for both students and teachers by providing objective, data-driven feedback that makes rigorous thinking visible and actionable.",
     importance: "Raising expectations requires clear standards. This tool moves the conversation from abstract goals to concrete analysis, helping the entire school community align on what rigor actually looks like in practice.",
     quote: "We need to push instruction beyond recall to true agency, ensuring rigor is a reality in every classroom.",
@@ -140,6 +143,7 @@ const presentationFellows: Partial<Fellow>[] = [
     name: "JD",
     role: "Instructional Coach",
     appDescription: "Thinking Through Learning. A thinking partner for teachers to help them think through their lessons before teaching them, reflect on lessons after they are taught, and to brainstorm strategies based on classroom experiences.",
+    summary: "A thinking partner for teachers to help them think through, reflect on, and brainstorm lesson strategies based on classroom experiences.",
     quote: "Teaching is challenging work. We need tools that support reflection without judgment, helping us understand the deeper purpose of our lessons.",
     impact: "Provides educators with a non-judgmental space to anticipate classroom dynamics, refine their timing, and reflect on what's working. This fosters a culture of continuous improvement and thoughtful planning.",
     importance: "Reflection is key to professional growth, but teachers often lack the time or a neutral partner to do it effectively. This tool bridges that gap.",
@@ -152,6 +156,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "4", // Crystal Yeung
     name: "Crystal Yeung",
     appDescription: "Feedback AI for Horror Stories. An AI writing coach that helps students refine their horror narratives by focusing on 'show, don't tell' strategies. It analyzes drafts for sensory details, suspense, and mood, offering specific questions and prompts in a structured feedback table without doing the writing for them.",
+    summary: "An AI writing coach that helps students refine their horror narratives by focusing on 'show, don't tell' strategies.",
     quote: "Great writing comes from revision. We need feedback that nudges students to 'show, not tell' without stealing the joy of discovery from them.",
     impact: "Helps students at Brooklyn Collaborative Studies enhance their writing skills by providing feedback that deepens understanding of literary devices. It pushes them to effectively use repetition, alliteration, and dialogue to create atmosphere, ensuring they master the genre's conventions while maintaining ownership of their story.",
     importance: "Writing feedback can often be prescriptive. This tool models the revision process by asking 'tell me more' or 'what do you mean?', guiding students to discover their own solutions and develop a stronger, more descriptive writing voice.",
@@ -166,6 +171,7 @@ const presentationFellows: Partial<Fellow>[] = [
     name: "Arden Katine",
     role: "District Math Instructional Coach",
     appDescription: "Math Thought Partner. An AI tutor designed to support students with non-routine math problems through strategic, non-leading questioning. Rather than providing answers, it acts as a coach—helping students identify stuck points, visualize problems, and journal their discoveries to build long-term problem-solving skills.",
+    summary: "An AI tutor designed to support students with non-routine math problems through strategic, non-leading questioning.",
     quote: "We need to help students move forward through questioning, not telling.",
     impact: "Students are taking ownership of their learning journey. By having a tool that refuses to give the answer but always offers a way forward, students are building the resilience and agency needed to tackle complex mathematical challenges without immediate teacher intervention.",
     importance: "In math, the struggle is where the learning happens. This tool ensures that support doesn't rob students of that productive struggle, but instead scaffolds it so they can reach the solution themselves.",
@@ -177,6 +183,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "1", // Brendan Harney
     appDescription: "Near Peer Feedback Tool. A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review. Working to provide mastery and standards based feedback for science students across all grades.",
+    summary: "A tool designed to scaffold peer feedback, helping students provide more meaningful, specific, and actionable feedback to one another before teacher review.",
     quote: "Meaningful feedback requires understanding the standard. This tool ensures students aren't just correcting each other, but coaching each other toward mastery.",
     impact: "Students have shifted from giving generic 'good job' comments to providing specific, actionable feedback tied directly to scientific standards. This has noticeably improved the quality of final submissions and deepened student understanding of the grading criteria before they even hand in their work.",
     importance: "Peer feedback is often superficial. This tool structures the process so students must engage deeply with criteria and their peer's work.",
@@ -192,6 +199,7 @@ const presentationFellows: Partial<Fellow>[] = [
     name: "Joseph Vincente",
     role: "Vice Principal",
     appDescription: "Science PBAT Presentation Practice Tool. An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
+    summary: "An AI simulation that helps students prepare for their Performance Based Assessment Tasks (PBAT) defenses by asking probing questions and simulating the Q&A portion of the defense.",
     quote: "Confidence comes from practice. By simulating the defense, we transform the panel from a test of nerves into a demonstration of expertise.",
     impact: "Students are moving towards approaching their defenses with the confidence of experts. By stress-testing their knowledge beforehand, they are shifting from rote memorization to demonstrating true mastery during their presentations.",
     importance: "Defense preparation is high-stakes. This tool provides a safe space for rehearsal, building confidence and revealing gaps in logic before the final presentation.",
@@ -204,6 +212,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "14", // C. Costello
     name: "Christopher A. Costello",
     appDescription: "ELA & Debate Research Writing Coach. An AI thought partner that provides follow-up questions to research submissions, encouraging students to develop and improve persuasive writing and personal reflections. It targets support based on subject rubrics (ELA, Math, Science, Social Studies) without providing direct answers.",
+    summary: "An AI thought partner that provides follow-up questions to research submissions, encouraging students to develop and improve persuasive writing and personal reflections.",
     quote: "We need to encourage, develop, and improve persuasive writing through critical thinking, not just error correction.",
     impact: "Provides specific, positive reinforcement on grammar and punctuation while pushing for authentic student responses. Supports students from initial drafts to visual presentations and data analysis.",
     videoUrl: "https://vocalvideo.com/embed/v1/videos/223934",
@@ -217,6 +226,7 @@ const presentationFellows: Partial<Fellow>[] = [
     name: "Ed Castro",
     role: "Family Leadership Coordinator",
     appDescription: "CIOB Higher-Order Thinking (HOT) Helper. An instructional coaching assistant that helps educators analyze and improve the rigor and equity of their classroom artifacts. It provides feedback grounded in cognitive demand analysis, supporting teachers in creating rigorous, inclusive learning experiences.",
+    summary: "An instructional coaching assistant that helps educators analyze and improve the rigor and equity of their classroom artifacts.",
     quote: "We need tools that support teachers in designing for rigor and equity, not just compliance.",
     impact: "This tool has provided educators with a safe, non-evaluative space to audit their own materials. It allows them to instantly see where they can increase rigor and receive concrete, actionable coaching that they can implement immediately.",
     videoUrl: "https://vocalvideo.com/embed/v1/videos/224043",
@@ -229,6 +239,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "5", // Glen Mein
     name: "Glen Meinschein",
     appDescription: "Debate Dojo. An AI tool that helps teachers design 5-day debate protocols for Crew advisory, generating engaging topics, pro/con arguments, and lesson plans.",
+    summary: "An AI tool that helps teachers design 5-day debate protocols for Crew advisory, generating engaging topics, pro/con arguments, and lesson plans.",
     impact: "Impacts Crew advisory by bringing structured, meaningful debate into the classroom, allowing students to practice civil discourse and critical thinking on relevant topics, strengthening the community through shared intellectual inquiry.",
     importance: "Debate and discussion are crucial for civic engagement. This tool ensures that Crew advisory is not just a homeroom, but a place for rigorous, respectful dialogue on issues that matter to students.",
     playlabUrl: "https://www.playlab.ai/project/cmg6qia2f02xmoz0uhjcl6aht",
@@ -241,6 +252,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "7", // E. Coppola
     name: "Eileen Coppola",
     appDescription: "Create a Learning Plan. An AI guide that partners with students to co-construct personalized learning plans. It helps students define goals, assess their current understanding against New York State Standards, set actionable steps, and reflect on their progress.",
+    summary: "An AI guide that partners with students to co-construct personalized learning plans, helping them define goals and reflect on their progress.",
     quote: "We need to shift planning from something done to students to something done with them.",
     impact: "This tool promotes genuine student agency by facilitating co-planning between students and teachers. It ensures that learning goals are both rigorous and personally meaningful, directly aligning with CIOB's principles of student-centered learning and shared ownership of the educational journey.",
     importance: "True agency comes from understanding where you are and where you're going. This tool gives students the structure to navigate that journey themselves.",
@@ -253,6 +265,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "22", // Alexander Dvorak
     appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
+    summary: "An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons.",
     quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
     impact: "Shifts the cognitive lift from the teacher to the student, fostering genuine intellectual agency. By ensuring that rigorous thinking is accessible to all learners, it moves students from passive compliance to active ownership of their own inquiry and understanding.",
     importance: "It challenges the misconception that English Language Learners can't handle complex thought. By providing concrete, leveled strategies, it ensures that rigor is a constant, not an afterthought.",
@@ -264,6 +277,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "39", // S. Peters (Sparkle Peters)
     name: "Sparkle Peters",
     appDescription: "EchoSpace. An expert AI facilitator designed to guide student groups through effective virtual collaboration. It provides light structure and targeted prompts to help teams organize themselves, clarify goals, ensuring participation is even and thinking is co-constructed rather than just divided.",
+    summary: "An expert AI facilitator designed to guide student groups through effective virtual collaboration.",
     quote: "Collaboration is a skill, not a setting. We need to give student teams the structure to manage their own voices so they can focus on the thinking.",
     impact: "This tool fundamentally shifts learning from passive group participation to active, shared ownership. By scaffolding the 'how' of collaboration—resolving conflicts, clarifying roles, and ensuring equitable voice—it allows students to focus their cognitive energy on co-constructing knowledge and reasoning together, rather than getting stuck on logistics.",
     importance: "Group work often fails due to unstructured dynamics. This tool scaffolds the process, ensuring that collaboration supports higher-order thinking and that every student's voice is valued.",
@@ -275,6 +289,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "17", // Eloi (Eloi Villenueva)
     name: "Eloi Villenueva",
     appDescription: "Makers in Action. An AI facilitator that helps students plan and execute rigorous maker projects. It guides students through the design thinking process, ensuring their creations are aligned with learning goals while preserving their creative autonomy.",
+    summary: "An AI facilitator that helps students plan and execute rigorous maker projects, guiding them through the design thinking process.",
     impact: "This tool shifts the focus from efficiency to alignment and depth. Instead of just speeding up the process, it encourages students to design projects that are more tightly aligned with learning goals while pushing them to ask more profound, inquiry-driven questions that drive their making.",
     importance: "Maker projects can sometimes prioritize 'doing' over 'learning'. This tool ensures that the making is grounded in deep inquiry and clear educational objectives.",
     playlabUrl: "https://www.playlab.ai/project/cmh0jdf9m01rpil0uf0uxsx5n",
@@ -288,6 +303,7 @@ const presentationFellows: Partial<Fellow>[] = [
     name: "Rosa Bonilla",
     quote: "Language proficiency should never be a barrier to higher-order thinking or student inquiry.",
     appDescription: "Differentiation with Proficiency Levels in Spanish. An AI assistant for Spanish language education that curates and adapts texts for diverse learners. It provides versions of the same text at multiple proficiency levels (beginner to advanced/heritage), ensuring all students can access age-appropriate, intellectually engaging content regardless of their language background.",
+    summary: "An AI assistant for Spanish language education that curates and adapts texts for diverse learners at multiple proficiency levels.",
     impact: "Ensures equitable access to rigorous content at School Without Walls. By instantly generating scaffolded versions of authentic texts—along with vocabulary glossaries for beginners and analytical prompts for heritage speakers—it allows the entire class to engage with the same essential ideas and higher-order thinking questions.",
     importance: "True inclusion means everyone accesses the same complex ideas, not watered-down content. This tool makes differentiation manageable, ensuring that language proficiency isn't a barrier to intellectual engagement.",
     playlabUrl: "https://www.playlab.ai/project/cmhzeokrodtfxgf0uoy7jfrt7",
@@ -300,6 +316,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "33", // N. Weber
     name: "Nathan Weber",
     appDescription: "ThinkPhys: Learn Physics by Thinking Like a Physicist. An AI tutor for AP Physics 1 and C: E&M that guides student reasoning, reveals misconceptions, and leads them step-by-step toward conceptual understanding without simply providing answers.",
+    summary: "An AI tutor for AP Physics 1 and C: E&M that guides student reasoning, reveals misconceptions, and leads them step-by-step toward conceptual understanding.",
     quote: "Solving the equation is the easy part. The real work is understanding the physical reality behind it—and that requires conversation, not just calculation.",
     impact: "This tool pushes students beyond procedural fluency to a higher Depth of Knowledge (DOK). It requires them to articulate their reasoning and connect mathematical solutions to physical concepts, ensuring they truly understand the 'why' behind the physics, not just the 'how' of the calculation.",
     importance: "Physics often becomes an exercise in plugging numbers into formulas. This tool insists on conceptual grounding, training students to think like physicists who first understand the system before applying the math.",
@@ -313,6 +330,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "3", // Christina Crisfield -> Tina Crisfield
     name: "Tina Crisfield",
     appDescription: "Emotional Regulation Toolbox. An AI assistant for educators working with students with emotional and learning disabilities. It uses evidence-based frameworks (CBT, Plutchik's Wheel, Restorative Justice) to provide concise strategies for behavioral regulation based on antecedent, behavior, and consequence analysis.",
+    summary: "An AI assistant for educators working with students with emotional and learning disabilities to provide concise strategies for behavioral regulation.",
     impact: "This tool equips educators with immediate, non-judgmental strategies to de-escalate situations and support student self-regulation. It shifts the focus from punitive measures to restorative practices, helping students return to learning while building emotional resilience.",
     importance: "Managing complex behaviors can be overwhelming. This tool provides real-time, evidence-based support, ensuring that interventions are consistent, inclusive, and focused on the student's long-term social-emotional growth.",
     playlabUrl: "https://www.playlab.ai/project/cmgh0qyyw18ytiq0vf5hpyyz9",

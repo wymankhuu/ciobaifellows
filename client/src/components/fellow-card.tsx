@@ -47,14 +47,10 @@ export function FellowCard({ fellow, onClick }: FellowCardProps) {
               {fellow.school}
             </p>
             
-            {fellow.appDescription && (
+            {fellow.summary && (
               <div className="bg-secondary/50 p-2.5 rounded-md my-1.5 group-hover:bg-secondary/70 transition-colors">
-                 <p className="text-[10px] font-bold text-primary/60 mb-1 uppercase tracking-wider flex items-center gap-1">
-                   <span className="w-1 h-1 rounded-full bg-accent"></span>
-                   The Innovation
-                 </p>
-                 <p className="text-xs text-foreground/90 line-clamp-2 leading-relaxed font-medium">
-                   {fellow.appDescription}
+                 <p className="text-xs text-foreground/90 line-clamp-3 leading-relaxed font-medium">
+                   {fellow.summary}
                  </p>
               </div>
             )}
