@@ -122,9 +122,6 @@ export default function Home() {
                <p className="text-xl text-muted-foreground font-light leading-relaxed mb-8">
                  {programRationale.description}
                </p>
-               <p className="text-lg text-primary/80 font-medium italic border-l-4 border-accent pl-6 text-left max-w-2xl mx-auto">
-                 {programDetails.description}
-               </p>
              </div>
 
              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
@@ -167,6 +164,14 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12 relative z-20">
         
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-serif font-bold text-primary mb-3">Some of the Work so Far</h2>
+          <p className="text-muted-foreground text-lg mb-3">Spotlighting some of the work by the fellows so far</p>
+          <p className="text-xs font-bold text-accent uppercase tracking-widest border-t border-b border-accent/20 py-2 inline-block px-4">
+             More to come
+          </p>
+        </div>
+
         {/* Fellows Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-20">
           {fellows.map((fellow) => (
