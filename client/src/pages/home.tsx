@@ -67,7 +67,7 @@ export default function Home() {
 
             <div className="flex items-center justify-center gap-2 mb-4">
                <span className="px-3 py-1 rounded-full bg-accent/20 text-accent-foreground text-sm font-medium border border-accent/20">
-                 Cohorts 2025-2026
+                 2025-2026 Cohort
                </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight">
