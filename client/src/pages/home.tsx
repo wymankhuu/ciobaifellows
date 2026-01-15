@@ -165,8 +165,10 @@ export default function Home() {
       <main className="container mx-auto px-4 py-12 relative z-20">
         
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-serif font-bold text-primary mb-3">Some of the Work so Far</h2>
-          <p className="text-muted-foreground text-lg mb-3">Spotlighting some of the work by the fellows so far</p>
+          <h2 className="text-4xl font-serif font-bold text-primary mb-4">Some of the Work so Far</h2>
+          <p className="text-muted-foreground text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
+            Explore what the Design Fellows are building for their unique school contexts. Read about their work, test their prototypes, and see how they are designing for deep thinking.
+          </p>
           <p className="text-xs font-bold text-accent uppercase tracking-widest border-t border-b border-accent/20 py-2 inline-block px-4">
              More to come
           </p>
