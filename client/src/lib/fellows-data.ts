@@ -2,7 +2,7 @@ import cCostelloQr from "@assets/qrcode-PBATEssayProjectBuilder_1768425410059.pn
 import cCostelloPhoto from "@assets/CleanShot_2026-01-14_at_16.24.15@2x_1768425864489.png";
 import eCastroQr from "@assets/qrcode-CIOBHOTHelper_1768426557336.png";
 
-import eCastroPhoto from "@assets/CleanShot_2026-01-14_at_16.39.04@2x_1768426750429.png";
+import eCastroPhoto from "@assets/image_1768435325402.png";
 import bHarneyQr from "@assets/qrcode-NearPeerFeedbacksciencev2_1768427021869.png";
 import bHarneyCover from "@assets/CleanShot_2026-01-14_at_16.44.19@2x_1768427080910.png";
 import bHarneyPhoto from "@assets/CleanShot_2026-01-14_at_16.48.28@2x_1768427316706.png";
