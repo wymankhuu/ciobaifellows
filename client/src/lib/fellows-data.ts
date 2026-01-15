@@ -264,7 +264,7 @@ const presentationFellows: Partial<Fellow>[] = [
   },
   {
     id: "22", // Alexander Dvorak
-    appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An expert AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
+    appDescription: "HOT Bot (Higher Order Thinking Thought Partner). An AI colleague designed to help teachers audit and elevate the cognitive rigor of their lessons. Grounded in the Hess Cognitive Rigor Matrix and Internationals Network pedagogy, it helps educators design project-based, language-rich experiences that spark deep thinking for ELL and SLIFE students.",
     summary: "Helps teachers audit and elevate the cognitive rigor of their lessons.",
     quote: "Rigor shouldn't be a casualty of language support. We need to design for intellect, regardless of fluency.",
     impact: "Shifts the cognitive lift from the teacher to the student, fostering genuine intellectual agency. By ensuring that rigorous thinking is accessible to all learners, it moves students from passive compliance to active ownership of their own inquiry and understanding.",
@@ -276,7 +276,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "39", // S. Peters (Sparkle Peters)
     name: "Sparkle Peters",
-    appDescription: "EchoSpace. An expert AI facilitator designed to guide student groups through effective virtual collaboration. It provides light structure and targeted prompts to help teams organize themselves, clarify goals, ensuring participation is even and thinking is co-constructed rather than just divided.",
+    appDescription: "EchoSpace. An AI facilitator designed to guide student groups through effective virtual collaboration. It provides light structure and targeted prompts to help teams organize themselves, clarify goals, ensuring participation is even and thinking is co-constructed rather than just divided.",
     summary: "Guides student groups through effective virtual collaboration.",
     quote: "Collaboration is a skill, not a setting. We need to give student teams the structure to manage their own voices so they can focus on the thinking.",
     impact: "This tool fundamentally shifts learning from passive group participation to active, shared ownership. By scaffolding the 'how' of collaboration—resolving conflicts, clarifying roles, and ensuring equitable voice—it allows students to focus their cognitive energy on co-constructing knowledge and reasoning together, rather than getting stuck on logistics.",
