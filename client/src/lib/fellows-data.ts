@@ -96,7 +96,7 @@ const rawFellows = [
   { id: "10", name: "E. Castro", email: "ecastro16@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
   { id: "40", name: "Al Sylvia", school: "Bronx Lab School", role: "Principal", status: "Accepted", category: "Consortium" },
   { id: "2", name: "JD", school: "Bronx Lab School", role: "Instructional Coach", status: "Accepted", category: "Consortium" },
-  { id: "17", name: "Eloi", email: "eloi@flushinginternational.org", school: "Flushing High School", role: "Educator", status: "Accepted", category: "International" },
+  { id: "17", name: "Eloi", email: "eloi@flushinginternational.org", school: "Flushing International High School", role: "Educator", status: "Accepted", category: "International" },
   { id: "4", name: "Crystal Yeung", email: "crystal@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "5", name: "Glen Meinschein", email: "glen@bcs448.org", school: "Brooklyn Collaborative School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "7", name: "E. Coppola", email: "ecoppola5@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
