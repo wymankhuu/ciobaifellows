@@ -210,17 +210,7 @@ export default function Home() {
            <div className="text-center mb-12">
               <h2 className="text-4xl font-serif font-bold text-primary mb-4">About the CIOB</h2>
               <div className="flex flex-col items-center gap-2 mb-6">
-                 <div className="flex items-center gap-3 bg-white/50 backdrop-blur-sm p-2 pr-4 rounded-full border border-black/5 shadow-sm">
-                   <img 
-                     src={alanChengImage} 
-                     alt="Superintendent Alan Cheng" 
-                     className="w-10 h-10 rounded-full object-cover border border-black/10"
-                   />
-                   <div className="text-left">
-                     <p className="text-sm font-bold text-primary leading-none">Alan Cheng</p>
-                     <p className="text-xs text-muted-foreground font-medium">Superintendent</p>
-                   </div>
-                 </div>
+                 {/* Alan Cheng moved to content section */}
               </div>
               <a 
                 href="https://sites.google.com/schools.nyc.gov/ciob-citywide/home?authuser=0" 
@@ -248,6 +238,18 @@ export default function Home() {
                  <p className="text-lg text-muted-foreground leading-relaxed">
                    Across these schools, educators prioritize inquiry, critical thinking, and authentic demonstrations of mastery over standardized testing.
                  </p>
+                 
+                 <div className="flex items-center gap-3 bg-white/50 backdrop-blur-sm p-3 pr-5 rounded-full border border-black/5 shadow-sm w-fit">
+                   <img 
+                     src={alanChengImage} 
+                     alt="Superintendent Alan Cheng" 
+                     className="w-12 h-12 rounded-full object-cover border border-black/10"
+                   />
+                   <div className="text-left">
+                     <p className="text-base font-bold text-primary leading-none mb-1">Alan Cheng</p>
+                     <p className="text-sm text-muted-foreground font-medium">Superintendent</p>
+                   </div>
+                 </div>
               </div>
            </div>
 
