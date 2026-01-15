@@ -29,6 +29,27 @@ export default function Home() {
       {/* Hero Section */}
       <header className="relative bg-primary text-primary-foreground py-24 overflow-hidden">
         <style>{`html { scroll-behavior: smooth; }`}</style>
+        
+        {/* Navigation Links - Top Right */}
+        <nav className="absolute top-0 right-0 p-6 z-20 hidden md:flex items-center gap-6 text-primary-foreground/90 font-medium tracking-wide text-sm uppercase">
+          <a href="#context" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            Context
+          </a>
+          <a href="#program" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            Program Design
+          </a>
+          <a href="#fellows" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            The Fellows
+          </a>
+          <a href="#about" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
+            About CIOB
+          </a>
+        </nav>
+
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div
@@ -55,26 +76,6 @@ export default function Home() {
             <p className="text-xl md:text-2xl font-light text-primary-foreground/80 max-w-2xl mx-auto font-serif italic mb-8">
               "Does this use of AI deepen thinking, or does it flatten it?"
             </p>
-
-            {/* Navigation Links */}
-            <nav className="flex flex-wrap justify-center gap-6 md:gap-10 mt-12 text-primary-foreground/80 font-medium tracking-wide text-sm md:text-base uppercase">
-              <a href="#context" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                Context
-              </a>
-              <a href="#program" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                Program Design
-              </a>
-              <a href="#fellows" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                The Fellows
-              </a>
-              <a href="#about" className="hover:text-white hover:scale-105 transition-all flex items-center gap-2 group">
-                <span className="w-1.5 h-1.5 rounded-full bg-accent opacity-0 group-hover:opacity-100 transition-opacity"></span>
-                About CIOB
-              </a>
-            </nav>
           </motion.div>
         </div>
       </header>
