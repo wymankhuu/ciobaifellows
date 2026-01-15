@@ -231,6 +231,7 @@ const presentationFellows: Partial<Fellow>[] = [
     id: "10", // E. Castro
     name: "Ed Castro",
     role: "Family Leadership Coordinator",
+    bio: "With roots in Brooklyn and a heart for service, I guide schools in using tech, policy, and outside-the-box thinking to build inclusive, empowered communities. As a CIOB brand ambassador and one of the earliest AI adopters in the DOE, I center parent engagement, drive innovation, and bring clarity, connection, and good energy to every space.",
     appDescription: "CIOB Higher-Order Thinking (HOT) Helper. An instructional coaching assistant that helps educators analyze and improve the rigor and equity of their classroom artifacts. It provides feedback grounded in cognitive demand analysis, supporting teachers in creating rigorous, inclusive learning experiences.",
     summary: "Helps educators analyze and improve the rigor and equity of their classroom artifacts.",
     quote: "We need tools that support teachers in designing for rigor and equity, not just compliance.",
@@ -285,6 +286,7 @@ const presentationFellows: Partial<Fellow>[] = [
   {
     id: "39", // S. Peters (Sparkle Peters)
     name: "Sparkle Peters",
+    bio: "Ed Tech Director and Computer Science teacher at Virtual Innovators Academy, which is an all remote school.",
     appDescription: "EchoSpace. An AI facilitator designed to guide student groups through effective virtual collaboration. It provides light structure and targeted prompts to help teams organize themselves, clarify goals, ensuring participation is even and thinking is co-constructed rather than just divided.",
     summary: "Guides student groups through effective virtual collaboration.",
     quote: "Collaboration is a skill, not a setting. We need to give student teams the structure to manage their own voices so they can focus on the thinking.",
