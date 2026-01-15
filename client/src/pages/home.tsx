@@ -167,7 +167,7 @@ export default function Home() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-serif font-bold text-primary mb-4">Some of the Work so Far</h2>
           <p className="text-muted-foreground text-lg mb-6 max-w-2xl mx-auto leading-relaxed">
-            Explore what the Design Fellows are building for their unique school contexts. Read about their work, test their apps, and see how they are designing for deep thinking.
+            Explore what the Design Fellows are building for their unique school contexts. Read about their work, test their apps, and see how they are designing for deeper thinking and greater agency.
           </p>
           <p className="text-xs font-bold text-accent uppercase tracking-widest border-t border-b border-accent/20 py-2 inline-block px-4">
              More to come
