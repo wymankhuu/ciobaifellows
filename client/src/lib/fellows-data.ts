@@ -98,10 +98,10 @@ const rawFellows = [
   { id: "12", name: "J. Vincente", email: "jvincente2@schools.nyc.gov", school: "East Side Community School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "14", name: "C. Costello", email: "Ccostello2@schools.nyc.gov", school: "El Puente Academy for Peace and Justice", role: "Educator", status: "Accepted", category: "Consortium" },
   
-  // Specific Sequence Requested: Ed -> Wilnny -> Sparkle
+  // Specific Sequence Requested: Ed -> Sparkle -> Wilnny
   { id: "10", name: "E. Castro", email: "ecastro16@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
-  { id: "41", name: "Wilnny Abreu", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "39", name: "S. Peters", email: "speters9@schools.nyc.gov", school: "Virtual Innovators Academy", role: "Educator", status: "Accepted", category: "District/Other" },
+  { id: "41", name: "Wilnny Abreu", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
 
   // Remaining Fellows
   { id: "40", name: "Al Sylvia", school: "Bronx Lab School", role: "Principal", status: "Accepted", category: "Consortium" },
@@ -374,6 +374,7 @@ const presentationFellows: Partial<Fellow>[] = [
     importance: "Differentiation is often the hardest part of teaching. This tool ensures that every student, regardless of their reading level or language background, has a personalized coach to guide them toward independence.",
     quote: "True equity means meeting every student exactly where they are. We need tools that don't just accommodate diverse learning needs, but actively empower students to leverage their unique perspectives as strengths.",
     playlabUrl: "https://www.playlab.ai/project/cmi4wpmn54ujshl0u1r5zai8c",
+    videoUrl: "https://vocalvideo.com/embed/v1/videos/224397",
     qrCode: wAbreuQr,
     photoUrl: wAbreuPhoto,
     coverImage: ciobLogo,
