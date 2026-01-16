@@ -37,6 +37,8 @@ import aSylviaQr from "@assets/qrcode-TeacherLessonDOKAnalyzer_1768432969009.png
 import aSylviaPhoto from "@assets/CleanShot_2026-01-14_at_18.23.05@2x_1768432991865.png";
 import aSylviaCover from "@assets/image_1768433140690.png";
 import jdQr from "@assets/qrcode-ThinkingThroughLearning_(1)_1768433720161.png";
+import wAbreuQr from "@assets/qrcode-UHHSIEPSupport_1768572159125.png";
+import wAbreuPhoto from "@assets/CleanShot_2026-01-16_at_09.03.30@2x_1768572219800.png";
 
 export interface Fellow {
   id: string;
@@ -105,6 +107,7 @@ const rawFellows = [
   { id: "22", name: "Alexander Dvorak", email: "advorak@schools.nyc.gov", school: "International HS at Union Square", role: "Educator", status: "Accepted", category: "International" },
   { id: "28", name: "R. Bonilla", email: "rbonilla7@schools.nyc.gov", school: "School Without Walls", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "33", name: "N. Weber", email: "nweber5@uhhsnyc.org", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "41", name: "Wilnny Abreu", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "39", name: "S. Peters", email: "speters9@schools.nyc.gov", school: "Virtual Innovators Academy", role: "Educator", status: "Accepted", category: "District/Other" },
 ] as const;
 
@@ -353,6 +356,21 @@ const presentationFellows: Partial<Fellow>[] = [
     playlabUrl: "https://www.playlab.ai/project/cmgh0qyyw18ytiq0vf5hpyyz9",
     qrCode: tCrisfieldQr,
     photoUrl: tCrisfieldPhoto,
+    coverImage: ciobLogo,
+    coverStyle: 'contain-navy'
+  },
+  {
+    id: "41", // Wilnny Abreu
+    name: "Wilnny Abreu",
+    bio: "Special Education Teacher at University Heights High School dedicated to creating equitable learning environments for diverse learners.",
+    appDescription: "IEP Reading Comprehension Coach. An expert reading comprehension and language-support coach designed to help students with IEPs become more independent with reading tasks. It teaches specific comprehension strategies, provides supports only when needed, and gradually fades those supports as students demonstrate success.",
+    summary: "Helps students with IEPs build reading independence through scaffolded comprehension strategies and gradual release of support.",
+    impact: "Empowers students to tackle complex texts with confidence. By providing personalized, just-in-time scaffolds for vocabulary, sentence structure, and inference, it allows students to access grade-level content without over-relying on teacher intervention.",
+    importance: "Differentiation is often the hardest part of teaching. This tool ensures that every student, regardless of their reading level or language background, has a personalized coach to guide them toward independence.",
+    quote: "True equity means meeting every student exactly where they are. We need tools that don't just accommodate diverse learning needs, but actively empower students to leverage their unique perspectives as strengths.",
+    playlabUrl: "https://www.playlab.ai/project/cmi4wpmn54ujshl0u1r5zai8c",
+    qrCode: wAbreuQr,
+    photoUrl: wAbreuPhoto,
     coverImage: ciobLogo,
     coverStyle: 'contain-navy'
   }
