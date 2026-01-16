@@ -92,11 +92,18 @@ const schoolCategories: Record<string, Fellow['category']> = {
 
 // Data extracted and normalized from the provided text
 const rawFellows = [
+  // Video Fellows First
+  { id: "8", name: "A. Katine", email: "akatine@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
   { id: "1", name: "Brendan Harney", email: "brendan.harney@bronxlabschool.org", school: "Bronx Lab School", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "12", name: "J. Vincente", email: "jvincente2@schools.nyc.gov", school: "East Side Community School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "8", name: "A. Katine", email: "akatine@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
   { id: "14", name: "C. Costello", email: "Ccostello2@schools.nyc.gov", school: "El Puente Academy for Peace and Justice", role: "Educator", status: "Accepted", category: "Consortium" },
+  
+  // Specific Sequence Requested: Ed -> Wilnny -> Sparkle
   { id: "10", name: "E. Castro", email: "ecastro16@schools.nyc.gov", school: "CIOB District Team", role: "District Leader", status: "Accepted", category: "District/Other" },
+  { id: "41", name: "Wilnny Abreu", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
+  { id: "39", name: "S. Peters", email: "speters9@schools.nyc.gov", school: "Virtual Innovators Academy", role: "Educator", status: "Accepted", category: "District/Other" },
+
+  // Remaining Fellows
   { id: "40", name: "Al Sylvia", school: "Bronx Lab School", role: "Principal", status: "Accepted", category: "Consortium" },
   { id: "2", name: "JD", school: "Bronx Lab School", role: "Instructional Coach", status: "Accepted", category: "Consortium" },
   { id: "17", name: "Eloi", email: "eloi@flushinginternational.org", school: "Flushing International High School", role: "Educator", status: "Accepted", category: "International" },
@@ -107,8 +114,6 @@ const rawFellows = [
   { id: "22", name: "Alexander Dvorak", email: "advorak@schools.nyc.gov", school: "International HS at Union Square", role: "Educator", status: "Accepted", category: "International" },
   { id: "28", name: "R. Bonilla", email: "rbonilla7@schools.nyc.gov", school: "School Without Walls", role: "Educator", status: "Accepted", category: "Consortium" },
   { id: "33", name: "N. Weber", email: "nweber5@uhhsnyc.org", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "41", name: "Wilnny Abreu", school: "University Heights High School", role: "Educator", status: "Accepted", category: "Consortium" },
-  { id: "39", name: "S. Peters", email: "speters9@schools.nyc.gov", school: "Virtual Innovators Academy", role: "Educator", status: "Accepted", category: "District/Other" },
 ] as const;
 
 export const fellows: Fellow[] = rawFellows.map(fellow => ({
