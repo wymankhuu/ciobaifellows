@@ -244,6 +244,20 @@ const presentationFellows: Partial<Fellow>[] = [
     photoUrl: eCastroPhoto
   },
   {
+    id: "39", // S. Peters (Sparkle Peters)
+    name: "Sparkle Peters",
+    bio: "Ed Tech Director and Computer Science teacher at the all-remote Virtual Innovators Academy.",
+    appDescription: "EchoSpace. An AI facilitator designed to guide student groups through effective virtual collaboration. It provides light structure and targeted prompts to help teams organize themselves, clarify goals, ensuring participation is even and thinking is co-constructed rather than just divided.",
+    summary: "Guides student groups through effective virtual collaboration.",
+    quote: "Collaboration is a skill, not a setting. We need to give student teams the structure to manage their own voices so they can focus on the thinking.",
+    impact: "This tool fundamentally shifts learning from passive group participation to active, shared ownership. By scaffolding the 'how' of collaboration—resolving conflicts, clarifying roles, and ensuring equitable voice—it allows students to focus their cognitive energy on co-constructing knowledge and reasoning together, rather than getting stuck on logistics.",
+    importance: "Group work often fails due to unstructured dynamics. This tool scaffolds the process, ensuring that collaboration supports higher-order thinking and that every student's voice is valued.",
+    playlabUrl: "https://www.playlab.ai/project/cmgr2swd93bwpis0vddordmx7",
+    videoUrl: "https://vocalvideo.com/embed/v1/videos/224416",
+    qrCode: sPetersQr,
+    photoUrl: sPetersPhoto
+  },
+  {
     id: "5", // Glen Mein
     name: "Glen Meinschein",
     bio: "Special Education teacher and AI lead at Brooklyn Collaborative Studies creating engaging, project-based learning.",
@@ -283,19 +297,6 @@ const presentationFellows: Partial<Fellow>[] = [
     playlabUrl: "https://www.playlab.ai/project/cmh9uqdyr7hnqfr0uwe241n9l",
     qrCode: aDvorakQr,
     photoUrl: aDvorakPhoto
-  },
-  {
-    id: "39", // S. Peters (Sparkle Peters)
-    name: "Sparkle Peters",
-    bio: "Ed Tech Director and Computer Science teacher at the all-remote Virtual Innovators Academy.",
-    appDescription: "EchoSpace. An AI facilitator designed to guide student groups through effective virtual collaboration. It provides light structure and targeted prompts to help teams organize themselves, clarify goals, ensuring participation is even and thinking is co-constructed rather than just divided.",
-    summary: "Guides student groups through effective virtual collaboration.",
-    quote: "Collaboration is a skill, not a setting. We need to give student teams the structure to manage their own voices so they can focus on the thinking.",
-    impact: "This tool fundamentally shifts learning from passive group participation to active, shared ownership. By scaffolding the 'how' of collaboration—resolving conflicts, clarifying roles, and ensuring equitable voice—it allows students to focus their cognitive energy on co-constructing knowledge and reasoning together, rather than getting stuck on logistics.",
-    importance: "Group work often fails due to unstructured dynamics. This tool scaffolds the process, ensuring that collaboration supports higher-order thinking and that every student's voice is valued.",
-    playlabUrl: "https://www.playlab.ai/project/cmgr2swd93bwpis0vddordmx7",
-    qrCode: sPetersQr,
-    photoUrl: sPetersPhoto
   },
   {
     id: "17", // Eloi (Eloi Villenueva)
